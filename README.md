@@ -58,7 +58,7 @@ Use a tabela abaixo para conferir se a imagem do seu CD original corresponde exa
 * **`games/oficina-de-invencoes/`** — Código-fonte da correção de fontes (`txtdiag.dll`), patch automático de 28 bytes do `BRINV3R.EXE` e launcher nativo ISO/CUE/WAV (`build.py`).
 * **`games/orly-br/`** — Código-fonte `orlyfix` adaptado para o executável brasileiro (`-DORLY_BR`) + launcher nativo com extrator ISO 9660 e InstallShield 3.0 em C puro (`build.py`).
 * **`games/bigjob-br/`** — Lifter estático Win16 → C, runtime nativo, VFS de ISO, player QuickTime e ferramentas de análise feitos do zero (`tools/build_recomp.py`).
-* **`games/scummvm-standalone/`** — Perfis JSON e gerador automatizado dos executáveis independentes (código-fonte completo GPLv3+ do motor customizado baseado no ScummVM disponível em [guilhermehanti/cdrom-motor](https://github.com/guilhermehanti/cdrom-motor)).
+* **`games/scummvm-standalone/`** — Perfis JSON e gerador automatizado dos executáveis independentes (código-fonte completo GPLv3+ do motor customizado baseado no ScummVM disponível em [guilhermehanti/custom-scummvm-cdrom-engine](https://github.com/guilhermehanti/custom-scummvm-cdrom-engine)).
 * **`tools/cdlauncher/`** — Biblioteca C compartilhada (leitor ISO 9660/Joliet, parser CUE/BIN, extrator de CD-Audio WAV, descompactador InstallShield 3.0 / PKWARE DCL, SHA-256 e interface Win32).
 
 ---

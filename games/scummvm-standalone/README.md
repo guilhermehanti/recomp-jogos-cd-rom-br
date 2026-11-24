@@ -19,5 +19,5 @@ customizado **`ScummVM-BR`** (Licença **GPLv3+**) para produzir executáveis 10
 ## Código-fonte completo (GPLv3+)
 
 O código-fonte completo do motor customizado (incluindo `common/formats/iso9660.*`, `common/fs-iso.*`, `base/standalone.*`,
-detecções PT-BR e correção de paleta de *A Casa de Franklin*) está publicado em [guilhermehanti/cdrom-motor](https://github.com/guilhermehanti/cdrom-motor)
+detecções PT-BR e correção de paleta de *A Casa de Franklin*) está publicado em [guilhermehanti/custom-scummvm-cdrom-engine](https://github.com/guilhermehanti/custom-scummvm-cdrom-engine)
 em conformidade com a licença GPLv3+.

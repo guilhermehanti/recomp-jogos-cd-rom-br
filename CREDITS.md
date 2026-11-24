@@ -21,7 +21,7 @@ Este repositório reúne **Jogos clássicos de CD-ROM localizados para o Portugu
 
 ## Bibliotecas e Referências Técnicas
 
-- **ScummVM Team & Contribuidores:** Motor `mediastation`, motor `director`, GUI e sistema de shaders (GPLv3+). Código-fonte completo da nossa versão customizada disponível em [guilhermehanti/cdrom-motor](https://github.com/guilhermehanti/cdrom-motor).
+- **ScummVM Team & Contribuidores:** Motor `mediastation`, motor `director`, GUI e sistema de shaders (GPLv3+). Código-fonte completo da nossa versão customizada disponível em [guilhermehanti/custom-scummvm-cdrom-engine](https://github.com/guilhermehanti/custom-scummvm-cdrom-engine).
 - **leo-dragons (`invention-studio-rescue`):** Proxy `winmm.dll` para emulação de CD Audio via CUE/WAV e escalonamento HD (`Ctrl+I`) em *Invention Studio* / *Taller de Inventos* (Licença MIT — veja [MIT-invention-studio-rescue.txt](LICENSES/MIT-invention-studio-rescue.txt)).
 - **Matthew Bloch (`orlys-draw-a-story-fixes`):** Correções originais de compatibilidade para *Orly's Draw-A-Story* (Licença CC0 1.0 — veja [CC0-1.0.txt](LICENSES/CC0-1.0.txt)), com referências prévias a `dxwnd`, `DDrawCompat`, `Sharp-Bilinear-Shaders` e `Ultimate ASI Loader`.
 - **Especificação PKWARE DCL / InstallShield 3.0:** O extrator nativo em `tools/cdlauncher/is3_extract.c` implementa a descompressão do formato público PKWARE Data Compression Library (Implode/Explode) e cabeçalhos InstallShield 3.0 em C puro.
