@@ -8,7 +8,7 @@ Este repositório reúne **Jogos clássicos de CD-ROM localizados para o Portugu
 
 ## Tabela de Créditos e Licenças
 
-| Jogo | Tipo de Projeto | Projeto Base / Upstream | Licença | Suas Contribuições / Adaptações PT-BR |
+| Jogo | Tipo de Projeto | Projeto Base / Upstream | Licença | Minhas Contribuições / Adaptações PT-BR |
 |---|---|---|---|---|
 | **101 Dálmatas: Livro Animado Interativo** | Standalone (motor `mediastation`) | [ScummVM](https://github.com/scummvm/scummvm) — ScummVM Team | **GPLv3+** | Fork customizado `ScummVM-BR` com detecção PT-BR, leitura direta de ISO 9660/Joliet sem extração, modo standalone sem launcher/branding, menu in-game no `F5`, download de shaders com CA nativa do Windows e build estático |
 | **O Corcunda de Notre Dame: Livro Animado Interativo** | Standalone (motor `mediastation`) | [ScummVM](https://github.com/scummvm/scummvm) — ScummVM Team | **GPLv3+** | Mesmo sistema standalone `ScummVM-BR` + detecção da edição brasileira |
