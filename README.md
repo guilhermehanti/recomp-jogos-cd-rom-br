@@ -15,14 +15,19 @@ Coleção de **Jogos clássicos de CD-ROM lançados no Brasil**, adaptados e rec
 
 ## Jogos Disponíveis
 
-| Jogo | Formato aceito na 1ª vez | Atalhos úteis dentro do jogo | Como trocar o CD depois |
-|---|---|---|---|
-| **101 Dálmatas: Livro Animado Interativo** | `.iso` (lê direto da ISO, sem extrair) | `F5` abre o menu de configurações (gráficos, shaders, tela cheia, áudio) | Menu `F5` → **Trocar ISO...** |
-| **O Corcunda de Notre Dame: Livro Animado Interativo** | `.iso` (lê direto da ISO, sem extrair) | `F5` abre o menu de configurações (gráficos, shaders, tela cheia, áudio) | Menu `F5` → **Trocar ISO...** |
-| **A Casa de Franklin** | `.iso` (lê direto da ISO, sem extrair) | `F5` abre o menu de configurações (gráficos, shaders, tela cheia, áudio) | Menu `F5` → **Trocar ISO...** |
-| **Oficina de Invenções** | `.cue` + `.bin` *(recomendado para música do CD)* ou `.iso` | `Ctrl+I` abre o menu de tela cheia, escala e filtros gráficos | Segure `Shift` ao abrir o `.exe` |
-| **Orly: Histórias para Desenhar** | `.iso`, `.cue` ou `.bin` | `Alt+Enter` tela cheia · `F1`–`F4` filtros gráficos | Segure `Shift` ao abrir o `.exe` |
-| **Big Job** | `.iso` (lê direto da ISO, sem extrair) | Recompilação estática nativa Win16 → Windows x64 | Edite/apague `saves\recomp.ini` |
+| Jogo | Formato aceito na 1ª vez | Atalhos úteis dentro do jogo |
+|---|---|---|
+| **101 Dálmatas: Livro Animado Interativo** | `.iso` (lê direto da ISO, sem extrair) | `F5` abre o menu de configurações (gráficos, shaders, tela cheia, áudio) |
+| **O Corcunda de Notre Dame: Livro Animado Interativo** | `.iso` (lê direto da ISO, sem extrair) | `F5` abre o menu de configurações (gráficos, shaders, tela cheia, áudio) |
+| **A Casa de Franklin** | `.iso` (lê direto da ISO, sem extrair) | `F5` abre o menu de configurações (gráficos, shaders, tela cheia, áudio) |
+| **Oficina de Invenções** | `.cue` + `.bin` *(recomendado para música do CD)* ou `.iso` | `Ctrl+I` abre o menu de tela cheia, escala e filtros gráficos |
+| **Orly: Histórias para Desenhar** | `.iso`, `.cue` ou `.bin` | `Alt+Enter` tela cheia · `F1`–`F4` filtros gráficos |
+| **Big Job** | `.iso` (lê direto da ISO, sem extrair) | Recompilação estática nativa Win16 → Windows x64 |
+
+> **Precisou mover a ISO de pasta ou selecionar outra imagem?**
+> - **101 Dálmatas, Corcunda e Franklin:** aperte `F5` no jogo → **Trocar ISO...** (se a ISO for movida, o jogo também pede automaticamente ao abrir).
+> - **Oficina de Invenções e Orly:** segure `Shift` ao abrir o `.exe` caso queira reextrair de outra imagem.
+> - **Big Job:** apague o arquivo `saves\recomp.ini` para escolher outra `.iso`.
 
 ---
 
