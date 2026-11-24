@@ -1,0 +1,23 @@
+{
+  "app_id": "casadefranklin",
+  "executable_name": "A Casa de Franklin.exe",
+  "output_folder": "A Casa de Franklin",
+  "display_name": "A Casa de Franklin",
+  "engine": "director",
+  "game_id": "frankac",
+  "target_name": "frankac-win-br",
+  "expected_language": "br",
+  "expected_platform": "windows",
+  "expected_extra": "",
+  "runtime_icon_file": "FACENTER.ICO",
+  "icon": "tools/standalone/icons/franklin.ico",
+  "extra_configure_flags": [
+    "--disable-bink",
+    "--disable-vorbis",
+    "--disable-flac",
+    "--disable-mad",
+    "--disable-fluidsynth",
+    "--disable-mt32emu",
+    "--disable-nuked-opl"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "VER!6": {
+    "definition": "6 pascal GetFileVersionInfoSize(str ptr) GetFileVersionInfoSize16",
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/ver.dll16/ver.dll16.spec"
+  },
+  "VER!7": {
+    "definition": "7 pascal GetFileVersionInfo(str long long ptr) GetFileVersionInfo16",
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/ver.dll16/ver.dll16.spec"
+  },
+  "VER!11": {
+    "definition": "11 pascal VerQueryValue(segptr str ptr ptr) VerQueryValue16",
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/ver.dll16/ver.dll16.spec"
+  },
+  "TOOLHELP!63": {
+    "definition": "63 pascal -ret16 TaskFirst(ptr) TaskFirst16",
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/toolhelp.dll16/toolhelp.dll16.spec"
+  },
+  "TOOLHELP!64": {
+    "definition": "64 pascal -ret16 TaskNext(ptr) TaskNext16",
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/toolhelp.dll16/toolhelp.dll16.spec"
+  }
+}

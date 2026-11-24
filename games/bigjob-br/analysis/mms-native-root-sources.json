@@ -1,0 +1,767 @@
+{
+  "help_selection": [
+    {
+      "scene_argument": 0,
+      "default_virtual_48_root": 380,
+      "alternate_root": 422
+    },
+    {
+      "scene_argument": 1,
+      "default_virtual_48_root": 386,
+      "alternate_root": 429
+    },
+    {
+      "scene_argument": 2,
+      "default_virtual_48_root": 392,
+      "alternate_root": 436
+    },
+    {
+      "scene_argument": 3,
+      "default_virtual_48_root": 395,
+      "alternate_root": 423
+    },
+    {
+      "scene_argument": 4,
+      "default_virtual_48_root": 65535,
+      "alternate_root": 434
+    },
+    {
+      "scene_argument": 5,
+      "default_virtual_48_root": 401,
+      "alternate_root": 433
+    },
+    {
+      "scene_argument": 6,
+      "default_virtual_48_root": 394,
+      "alternate_root": 422
+    },
+    {
+      "scene_argument": 7,
+      "default_virtual_48_root": 400,
+      "alternate_root": 424
+    },
+    {
+      "scene_argument": 8,
+      "default_virtual_48_root": 65535,
+      "alternate_root": 65535
+    },
+    {
+      "scene_argument": 9,
+      "default_virtual_48_root": 65535,
+      "alternate_root": 65535
+    },
+    {
+      "scene_argument": 10,
+      "default_virtual_48_root": 380,
+      "alternate_root": 281
+    },
+    {
+      "scene_argument": 11,
+      "default_virtual_48_root": 65535,
+      "alternate_root": 280
+    },
+    {
+      "scene_argument": 12,
+      "default_virtual_48_root": 384,
+      "alternate_root": 432
+    },
+    {
+      "scene_argument": 13,
+      "default_virtual_48_root": 393,
+      "alternate_root": 425
+    },
+    {
+      "scene_argument": 14,
+      "default_virtual_48_root": 65535,
+      "alternate_root": 65535
+    },
+    {
+      "scene_argument": 15,
+      "default_virtual_48_root": 385,
+      "alternate_root": 430
+    },
+    {
+      "scene_argument": 16,
+      "default_virtual_48_root": 388,
+      "alternate_root": 427
+    },
+    {
+      "scene_argument": 17,
+      "default_virtual_48_root": 387,
+      "alternate_root": 428
+    },
+    {
+      "scene_argument": 18,
+      "default_virtual_48_root": 383,
+      "alternate_root": 282
+    },
+    {
+      "scene_argument": 19,
+      "default_virtual_48_root": 382,
+      "alternate_root": 431
+    },
+    {
+      "scene_argument": 20,
+      "default_virtual_48_root": 391,
+      "alternate_root": 435
+    },
+    {
+      "scene_argument": 21,
+      "default_virtual_48_root": 390,
+      "alternate_root": 426
+    },
+    {
+      "scene_argument": 22,
+      "default_virtual_48_root": 65535,
+      "alternate_root": 65535
+    },
+    {
+      "scene_argument": 23,
+      "default_virtual_48_root": 65535,
+      "alternate_root": 65535
+    },
+    {
+      "scene_argument": 24,
+      "default_virtual_48_root": 65535,
+      "alternate_root": 65535
+    }
+  ],
+  "literal_constructor_calls": [
+    {
+      "segment": 3,
+      "call_offset": 9621,
+      "packed_argument": 65811,
+      "root_id": 275,
+      "setup": [
+        "258b: 66 68 13 01 01 00            \tpushl\t$0x10113                # imm = 0x10113",
+        "2591: 52                           \tpushw\t%dx",
+        "2592: ff 76 f4                     \tpushw\t-0xc(%bp)",
+        "2595: 9a ff ff 00 00               \tlcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 2596=30:04DA"
+      ]
+    },
+    {
+      "segment": 5,
+      "call_offset": 5870,
+      "packed_argument": 65932,
+      "root_id": 396,
+      "setup": [
+        "16e4: 66 68 8c 01 01 00            \tpushl\t$0x1018c                # imm = 0x1018C",
+        "16ea: 52                           \tpushw\t%dx",
+        "16eb: ff 76 cc                     \tpushw\t-0x34(%bp)",
+        "16ee: 9a ff ff 00 00               \tlcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 16EF=30:04DA"
+      ]
+    },
+    {
+      "segment": 5,
+      "call_offset": 6063,
+      "packed_argument": 131346,
+      "root_id": 274,
+      "setup": [
+        "17a5: 66 68 12 01 02 00            \tpushl\t$0x20112                # imm = 0x20112",
+        "17ab: 52                           \tpushw\t%dx",
+        "17ac: ff 76 f8                     \tpushw\t-0x8(%bp)",
+        "17af: 9a ff ff 00 00               \tlcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 17B0=30:04DA"
+      ]
+    },
+    {
+      "segment": 5,
+      "call_offset": 6257,
+      "packed_argument": 131350,
+      "root_id": 278,
+      "setup": [
+        "1867: 66 68 16 01 02 00            \tpushl\t$0x20116                # imm = 0x20116",
+        "186d: 52                           \tpushw\t%dx",
+        "186e: ff 76 f0                     \tpushw\t-0x10(%bp)",
+        "1871: 9a ff ff 00 00               \tlcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 1872=30:04DA"
+      ]
+    },
+    {
+      "segment": 5,
+      "call_offset": 6614,
+      "packed_argument": 131468,
+      "root_id": 396,
+      "setup": [
+        "19cc: 66 68 8c 01 02 00            \tpushl\t$0x2018c                # imm = 0x2018C",
+        "19d2: 52                           \tpushw\t%dx",
+        "19d3: ff 76 d4                     \tpushw\t-0x2c(%bp)",
+        "19d6: 9a ff ff 00 00               \tlcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 19D7=30:04DA"
+      ]
+    },
+    {
+      "segment": 5,
+      "call_offset": 8444,
+      "packed_argument": 65812,
+      "root_id": 276,
+      "setup": [
+        "20f2: 66 68 14 01 01 00            \tpushl\t$0x10114                # imm = 0x10114",
+        "20f8: 52                           \tpushw\t%dx",
+        "20f9: ff 76 d4                     \tpushw\t-0x2c(%bp)",
+        "20fc: 9a ff ff 00 00               \tlcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 20FD=30:04DA"
+      ]
+    },
+    {
+      "segment": 8,
+      "call_offset": 2513,
+      "packed_argument": 131389,
+      "root_id": 317,
+      "setup": [
+        "9c6: 66 68 3d 01 02 00            \tpushl\t$0x2013d                # imm = 0x2013D",
+        "9cc: 52                           \tpushw\t%dx",
+        "9cd: ff b6 20 ff                  \tpushw\t-0xe0(%bp)",
+        "9d1: 9a ff ff 00 00               \tlcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 09D2=30:04DA"
+      ]
+    },
+    {
+      "segment": 8,
+      "call_offset": 2863,
+      "packed_argument": 131388,
+      "root_id": 316,
+      "setup": [
+        "b24: 66 68 3c 01 02 00            \tpushl\t$0x2013c                # imm = 0x2013C",
+        "b2a: 52                           \tpushw\t%dx",
+        "b2b: ff b6 08 ff                  \tpushw\t-0xf8(%bp)",
+        "b2f: 9a ff ff 00 00               \tlcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 0B30=30:04DA"
+      ]
+    },
+    {
+      "segment": 8,
+      "call_offset": 3213,
+      "packed_argument": 131387,
+      "root_id": 315,
+      "setup": [
+        "c82: 66 68 3b 01 02 00            \tpushl\t$0x2013b                # imm = 0x2013B",
+        "c88: 52                           \tpushw\t%dx",
+        "c89: ff b6 ec fe                  \tpushw\t-0x114(%bp)",
+        "c8d: 9a ff ff 00 00               \tlcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 0C8E=30:04DA"
+      ]
+    },
+    {
+      "segment": 8,
+      "call_offset": 3511,
+      "packed_argument": 131412,
+      "root_id": 340,
+      "setup": [
+        "dac: 66 68 54 01 02 00            \tpushl\t$0x20154                # imm = 0x20154",
+        "db2: 52                           \tpushw\t%dx",
+        "db3: ff b6 d8 fe                  \tpushw\t-0x128(%bp)",
+        "db7: 9a ff ff 00 00               \tlcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 0DB8=30:04DA"
+      ]
+    },
+    {
+      "segment": 8,
+      "call_offset": 5055,
+      "packed_argument": 65819,
+      "root_id": 283,
+      "setup": [
+        "13b4: 66 68 1b 01 01 00            \tpushl\t$0x1011b                # imm = 0x1011B",
+        "13ba: 52                           \tpushw\t%dx",
+        "13bb: ff b6 58 fe                  \tpushw\t-0x1a8(%bp)",
+        "13bf: 9a ff ff 00 00               \tlcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 13C0=30:04DA"
+      ]
+    },
+    {
+      "segment": 8,
+      "call_offset": 6569,
+      "packed_argument": 131452,
+      "root_id": 380,
+      "setup": [
+        "199f: 66 68 7c 01 02 00            \tpushl\t$0x2017c                # imm = 0x2017C",
+        "19a5: 52                           \tpushw\t%dx",
+        "19a6: ff 76 e0                     \tpushw\t-0x20(%bp)",
+        "19a9: 9a ff ff 00 00               \tlcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 19AA=30:04DA"
+      ]
+    },
+    {
+      "segment": 8,
+      "call_offset": 6640,
+      "packed_argument": 131453,
+      "root_id": 381,
+      "setup": [
+        "19e6: 66 68 7d 01 02 00            \tpushl\t$0x2017d                # imm = 0x2017D",
+        "19ec: 52                           \tpushw\t%dx",
+        "19ed: ff 76 dc                     \tpushw\t-0x24(%bp)",
+        "19f0: 9a ff ff 00 00               \tlcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 19F1=30:04DA"
+      ]
+    },
+    {
+      "segment": 8,
+      "call_offset": 8091,
+      "packed_argument": 65811,
+      "root_id": 275,
+      "setup": [
+        "1f91: 66 68 13 01 01 00            \tpushl\t$0x10113                # imm = 0x10113",
+        "1f97: 52                           \tpushw\t%dx",
+        "1f98: ff 76 f4                     \tpushw\t-0xc(%bp)",
+        "1f9b: 9a ff ff 00 00               \tlcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 1F9C=30:04DA"
+      ]
+    },
+    {
+      "segment": 9,
+      "call_offset": 702,
+      "packed_argument": 65907,
+      "root_id": 371,
+      "setup": [
+        "2b4: 66 68 73 01 01 00            \tpushl\t$0x10173                # imm = 0x10173",
+        "2ba: 52                           \tpushw\t%dx",
+        "2bb: ff 76 f4                     \tpushw\t-0xc(%bp)",
+        "2be: 9a ff ff 00 00               \tlcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 02BF=30:04DA"
+      ]
+    },
+    {
+      "segment": 9,
+      "call_offset": 844,
+      "packed_argument": 65833,
+      "root_id": 297,
+      "setup": [
+        "342: 66 68 29 01 01 00            \tpushl\t$0x10129                # imm = 0x10129",
+        "348: 52                           \tpushw\t%dx",
+        "349: ff 76 f0                     \tpushw\t-0x10(%bp)",
+        "34c: 9a ff ff 00 00               \tlcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 034D=30:04DA"
+      ]
+    },
+    {
+      "segment": 9,
+      "call_offset": 1016,
+      "packed_argument": 65832,
+      "root_id": 296,
+      "setup": [
+        "3ee: 66 68 28 01 01 00            \tpushl\t$0x10128                # imm = 0x10128",
+        "3f4: 52                           \tpushw\t%dx",
+        "3f5: ff 76 ec                     \tpushw\t-0x14(%bp)",
+        "3f8: 9a ff ff 00 00               \tlcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 03F9=30:04DA"
+      ]
+    },
+    {
+      "segment": 11,
+      "call_offset": 2233,
+      "packed_argument": 65813,
+      "root_id": 277,
+      "setup": [
+        "8af: 66 68 15 01 01 00            \tpushl\t$0x10115                # imm = 0x10115",
+        "8b5: 52                           \tpushw\t%dx",
+        "8b6: ff 76 f8                     \tpushw\t-0x8(%bp)",
+        "8b9: 9a ff ff 00 00               \tlcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 08BA=30:04DA"
+      ]
+    },
+    {
+      "segment": 11,
+      "call_offset": 3519,
+      "packed_argument": 65957,
+      "root_id": 421,
+      "setup": [
+        "db5: 66 68 a5 01 01 00            \tpushl\t$0x101a5                # imm = 0x101A5",
+        "dbb: 52                           \tpushw\t%dx",
+        "dbc: ff 76 fc                     \tpushw\t-0x4(%bp)",
+        "dbf: 9a ff ff 00 00               \tlcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 0DC0=30:04DA"
+      ]
+    },
+    {
+      "segment": 11,
+      "call_offset": 5878,
+      "packed_argument": 65957,
+      "root_id": 421,
+      "setup": [
+        "16eb: 66 68 a5 01 01 00            \tpushl\t$0x101a5                # imm = 0x101A5",
+        "16f1: 52                           \tpushw\t%dx",
+        "16f2: ff b6 48 ff                  \tpushw\t-0xb8(%bp)",
+        "16f6: 9a ff ff 00 00               \tlcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 16F7=30:04DA"
+      ]
+    },
+    {
+      "segment": 12,
+      "call_offset": 3825,
+      "packed_argument": 65809,
+      "root_id": 273,
+      "setup": [
+        "ee7: 66 68 11 01 01 00            \tpushl\t$0x10111                # imm = 0x10111",
+        "eed: 52                           \tpushw\t%dx",
+        "eee: ff 76 fc                     \tpushw\t-0x4(%bp)",
+        "ef1: 9a ff ff 00 00               \tlcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 0EF2=30:04DA"
+      ]
+    },
+    {
+      "segment": 16,
+      "call_offset": 3041,
+      "packed_argument": 65974,
+      "root_id": 438,
+      "setup": [
+        "bd7: 66 68 b6 01 01 00            \tpushl\t$0x101b6                # imm = 0x101B6",
+        "bdd: 52                           \tpushw\t%dx",
+        "bde: ff 76 e8                     \tpushw\t-0x18(%bp)",
+        "be1: 9a ff ff 00 00               \tlcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 0BE2=30:04DA"
+      ]
+    },
+    {
+      "segment": 16,
+      "call_offset": 3211,
+      "packed_argument": 65815,
+      "root_id": 279,
+      "setup": [
+        "c81: 66 68 17 01 01 00            \tpushl\t$0x10117                # imm = 0x10117",
+        "c87: 52                           \tpushw\t%dx",
+        "c88: ff 76 e0                     \tpushw\t-0x20(%bp)",
+        "c8b: 9a ff ff 00 00               \tlcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 0C8C=30:04DA"
+      ]
+    },
+    {
+      "segment": 17,
+      "call_offset": 8654,
+      "packed_argument": 65973,
+      "root_id": 437,
+      "setup": [
+        "21c4: 66 68 b5 01 01 00            \tpushl\t$0x101b5                # imm = 0x101B5",
+        "21ca: 52                           \tpushw\t%dx",
+        "21cb: ff 76 f8                     \tpushw\t-0x8(%bp)",
+        "21ce: 9a ff ff 00 00               \tlcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 21CF=30:04DA"
+      ]
+    },
+    {
+      "segment": 19,
+      "call_offset": 3397,
+      "packed_argument": 65848,
+      "root_id": 312,
+      "setup": [
+        "d3b: 66 68 38 01 01 00            \tpushl\t$0x10138                # imm = 0x10138",
+        "d41: 52                           \tpushw\t%dx",
+        "d42: ff 76 e4                     \tpushw\t-0x1c(%bp)",
+        "d45: 9a ff ff 00 00               \tlcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 0D46=30:04DA"
+      ]
+    },
+    {
+      "segment": 20,
+      "call_offset": 2851,
+      "packed_argument": 65816,
+      "root_id": 280,
+      "setup": [
+        "b19: 66 68 18 01 01 00            \tpushl\t$0x10118                # imm = 0x10118",
+        "b1f: 52                           \tpushw\t%dx",
+        "b20: ff 76 fc                     \tpushw\t-0x4(%bp)",
+        "b23: 9a ff ff 00 00               \tlcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 0B24=30:04DA"
+      ]
+    },
+    {
+      "segment": 20,
+      "call_offset": 3009,
+      "packed_argument": 65849,
+      "root_id": 313,
+      "setup": [
+        "bb7: 66 68 39 01 01 00            \tpushl\t$0x10139                # imm = 0x10139",
+        "bbd: 52                           \tpushw\t%dx",
+        "bbe: ff 76 ec                     \tpushw\t-0x14(%bp)",
+        "bc1: 9a ff ff 00 00               \tlcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 0BC2=30:04DA"
+      ]
+    },
+    {
+      "segment": 20,
+      "call_offset": 3802,
+      "packed_argument": 65994,
+      "root_id": 458,
+      "setup": [
+        "ed0: 66 68 ca 01 01 00            \tpushl\t$0x101ca                # imm = 0x101CA",
+        "ed6: 52                           \tpushw\t%dx",
+        "ed7: ff 76 d8                     \tpushw\t-0x28(%bp)",
+        "eda: 9a ff ff 00 00               \tlcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 0EDB=30:04DA"
+      ]
+    },
+    {
+      "segment": 21,
+      "call_offset": 4356,
+      "packed_argument": 65909,
+      "root_id": 373,
+      "setup": [
+        "10fa: 66 68 75 01 01 00            \tpushl\t$0x10175                # imm = 0x10175",
+        "1100: 52                           \tpushw\t%dx",
+        "1101: ff 76 fc                     \tpushw\t-0x4(%bp)",
+        "1104: 9a ff ff 00 00               \tlcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 1105=30:04DA"
+      ]
+    },
+    {
+      "segment": 21,
+      "call_offset": 4498,
+      "packed_argument": 65910,
+      "root_id": 374,
+      "setup": [
+        "1188: 66 68 76 01 01 00            \tpushl\t$0x10176                # imm = 0x10176",
+        "118e: 52                           \tpushw\t%dx",
+        "118f: ff 76 f8                     \tpushw\t-0x8(%bp)",
+        "1192: 9a ff ff 00 00               \tlcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 1193=30:04DA"
+      ]
+    },
+    {
+      "segment": 25,
+      "call_offset": 2158,
+      "packed_argument": 65824,
+      "root_id": 288,
+      "setup": [
+        "863: 66 68 20 01 01 00            \tpushl\t$0x10120                # imm = 0x10120",
+        "869: 52                           \tpushw\t%dx",
+        "86a: ff b6 7e ff                  \tpushw\t-0x82(%bp)",
+        "86e: 9a ff ff 00 00               \tlcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 086F=30:04DA"
+      ]
+    },
+    {
+      "segment": 25,
+      "call_offset": 2272,
+      "packed_argument": 65817,
+      "root_id": 281,
+      "setup": [
+        "8d5: 66 68 19 01 01 00            \tpushl\t$0x10119                # imm = 0x10119",
+        "8db: 52                           \tpushw\t%dx",
+        "8dc: ff b6 7a ff                  \tpushw\t-0x86(%bp)",
+        "8e0: 9a ff ff 00 00               \tlcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 08E1=30:04DA"
+      ]
+    },
+    {
+      "segment": 25,
+      "call_offset": 2622,
+      "packed_argument": 65846,
+      "root_id": 310,
+      "setup": [
+        "a33: 66 68 36 01 01 00            \tpushl\t$0x10136                # imm = 0x10136",
+        "a39: 52                           \tpushw\t%dx",
+        "a3a: ff b6 6a ff                  \tpushw\t-0x96(%bp)",
+        "a3e: 9a ff ff 00 00               \tlcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 0A3F=30:04DA"
+      ]
+    },
+    {
+      "segment": 25,
+      "call_offset": 2828,
+      "packed_argument": 65847,
+      "root_id": 311,
+      "setup": [
+        "b01: 66 68 37 01 01 00            \tpushl\t$0x10137                # imm = 0x10137",
+        "b07: 52                           \tpushw\t%dx",
+        "b08: ff b6 62 ff                  \tpushw\t-0x9e(%bp)",
+        "b0c: 9a ff ff 00 00               \tlcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 0B0D=30:04DA"
+      ]
+    },
+    {
+      "segment": 25,
+      "call_offset": 9842,
+      "packed_argument": 65825,
+      "root_id": 289,
+      "setup": [
+        "2668: 66 68 21 01 01 00            \tpushl\t$0x10121                # imm = 0x10121",
+        "266e: 52                           \tpushw\t%dx",
+        "266f: ff 76 fc                     \tpushw\t-0x4(%bp)",
+        "2672: 9a ff ff 00 00               \tlcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 2673=30:04DA"
+      ]
+    },
+    {
+      "segment": 26,
+      "call_offset": 1448,
+      "packed_argument": 65842,
+      "root_id": 306,
+      "setup": [
+        "59e: 66 68 32 01 01 00            \tpushl\t$0x10132                # imm = 0x10132",
+        "5a4: 52                           \tpushw\t%dx",
+        "5a5: ff 76 ea                     \tpushw\t-0x16(%bp)",
+        "5a8: 9a ff ff 00 00               \tlcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 05A9=30:04DA"
+      ]
+    },
+    {
+      "segment": 26,
+      "call_offset": 13046,
+      "packed_argument": 290,
+      "root_id": 290,
+      "setup": [
+        "32ec: 66 68 22 01 00 00            \tpushl\t$0x122                  # imm = 0x122",
+        "32f2: 52                           \tpushw\t%dx",
+        "32f3: ff 76 f4                     \tpushw\t-0xc(%bp)",
+        "32f6: 9a ff ff 00 00               \tlcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 32F7=30:04DA"
+      ]
+    },
+    {
+      "segment": 26,
+      "call_offset": 13152,
+      "packed_argument": 291,
+      "root_id": 291,
+      "setup": [
+        "3356: 66 68 23 01 00 00            \tpushl\t$0x123                  # imm = 0x123",
+        "335c: 52                           \tpushw\t%dx",
+        "335d: ff 76 f0                     \tpushw\t-0x10(%bp)",
+        "3360: 9a ff ff 00 00               \tlcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 3361=30:04DA"
+      ]
+    },
+    {
+      "segment": 27,
+      "call_offset": 377,
+      "packed_argument": 65956,
+      "root_id": 420,
+      "setup": [
+        "16f: 66 68 a4 01 01 00            \tpushl\t$0x101a4                # imm = 0x101A4",
+        "175: 52                           \tpushw\t%dx",
+        "176: ff 76 f8                     \tpushw\t-0x8(%bp)",
+        "179: 9a ff ff 00 00               \tlcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 017A=30:04DA"
+      ]
+    }
+  ],
+  "specific_sources": {
+    "03:1E0A": [
+      369,
+      370
+    ],
+    "03:11E7": [
+      302,
+      301,
+      300,
+      299,
+      303,
+      298
+    ],
+    "08:0E44-0F2F": [
+      321,
+      322,
+      323,
+      325,
+      326,
+      327,
+      328,
+      335,
+      339
+    ],
+    "08:02D8": [
+      324
+    ],
+    "08:12DA-1389": [
+      329,
+      330,
+      331,
+      332,
+      333,
+      334,
+      336,
+      337,
+      338
+    ],
+    "09:1EB5": [
+      397,
+      398,
+      399
+    ],
+    "11:0694-06DC": [
+      292,
+      294,
+      304,
+      314
+    ],
+    "17:22C4": [
+      284,
+      285,
+      286,
+      287
+    ],
+    "18:38A2": [
+      388,
+      389
+    ],
+    "23:1F70": [
+      217,
+      307,
+      308,
+      309
+    ]
+  },
+  "covered_audio_roots": [
+    217,
+    273,
+    274,
+    275,
+    276,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    292,
+    294,
+    298,
+    299,
+    300,
+    301,
+    302,
+    303,
+    304,
+    306,
+    307,
+    308,
+    309,
+    310,
+    313,
+    314,
+    316,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    369,
+    370,
+    371,
+    380,
+    381,
+    382,
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389,
+    390,
+    391,
+    392,
+    393,
+    394,
+    395,
+    397,
+    398,
+    399,
+    400,
+    401,
+    420,
+    421,
+    422,
+    423,
+    424,
+    425,
+    426,
+    427,
+    428,
+    429,
+    430,
+    431,
+    432,
+    433,
+    434,
+    435,
+    436,
+    437,
+    438,
+    458
+  ],
+  "sound_sites_with_mapped_native_entry_path": 422,
+  "sound_sites_without_mapped_native_entry_path": 19
+}

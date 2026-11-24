@@ -1,0 +1,717 @@
+{
+  "ne_header": {
+    "cs_ip": [
+      1,
+      0
+    ],
+    "ss_sp": [
+      49,
+      0
+    ],
+    "dgroup": 49,
+    "flags": "0x30a",
+    "os": 2
+  },
+  "compiler_hints": [
+    [
+      "49:004B",
+      "Borland C++ - Copyright 1994 Borland Intl."
+    ],
+    [
+      "49:1A16",
+      "(null)"
+    ],
+    [
+      "49:1E9E",
+      "print scanf : floating point formats not linked"
+    ],
+    [
+      "49:1F84",
+      "Floating Point: Square Root of Negative Number"
+    ],
+    [
+      "49:1FC4",
+      "Divide by Zero"
+    ],
+    [
+      "49:1FF9",
+      "Stack Overflow"
+    ],
+    [
+      "49:2008",
+      "Stack Underflow"
+    ],
+    [
+      "49:205F",
+      "Floating Point Trap"
+    ]
+  ],
+  "bootstrap_1_0000": [
+    "0000: pushw\t%bx",
+    "0001: pushw\t%cx",
+    "0002: pushw\t%es",
+    "0003: xorw\t%ax, %ax",
+    "0005: pushw\t%ax",
+    "0006: lcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 0007=40:02D7",
+    "000B: popw\t%ax",
+    "000C: popw\t%es",
+    "000D: popw\t%cx",
+    "000E: popw\t%bx",
+    "000F: lcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 0010=KERNEL!91",
+    "0014: orw\t%ax, %ax",
+    "0016: jne\t0x1b <.text+0x1b>",
+    "0018: jmp\t0xe6 <.text+0xe6>",
+    "001B: movw\t$0xffff, %ss:0x14       # imm = 0xFFFF",
+    "0022: movw\t%es, 0x38",
+    "0026: movw\t%bx, 0x3e",
+    "002A: movw\t%si, 0x3c",
+    "002E: movw\t%di, 0x3a",
+    "0032: movw\t%dx, 0x40",
+    "0036: xorw\t%ax, %ax",
+    "0038: pushw\t%ds",
+    "0039: popw\t%es",
+    "003A: movw\t$0x2118, %di            # imm = 0x2118",
+    "003D: movw\t$0x240e, %cx            # imm = 0x240E",
+    "0040: subw\t%di, %cx",
+    "0042: cld",
+    "0043: rep\t\tstosb\t%al, %es:(%di)",
+    "0045: xorw\t%ax, %ax",
+    "0047: pushw\t%ax",
+    "0048: lcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 0049=KERNEL!30",
+    "004D: pushw\t0x3a",
+    "0051: lcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 0052=USER!5",
+    "0056: orw\t%ax, %ax",
+    "0058: jne\t0x5d <.text+0x5d>",
+    "005A: jmp\t0xe6 <.text+0xe6>",
+    "005D: movb\t$0x30, %ah",
+    "005F: int\t$0x21",
+    "0061: movw\t%ax, 0x42",
+    "0064: lcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 0065=KERNEL!132",
+    "0069: testw\t$0x1, %ax",
+    "006C: je\t0x74 <.text+0x74>",
+    "006E: movw\t$0x8, 0x32",
+    "0074: testw\t$0x400, %ax             # imm = 0x400",
+    "0077: je\t0x7f <.text+0x7f>",
+    "0079: movw\t$0x1, 0x36",
+    "007F: andw\t$0xe, %ax",
+    "0082: shrw\t%ax",
+    "0084: testw\t$0x4, %ax",
+    "0087: jne\t0x8e <.text+0x8e>",
+    "0089: orw\t%ax, %ax",
+    "008B: je\t0x8e <.text+0x8e>",
+    "008D: incw\t%ax",
+    "008E: movw\t%ax, 0x34",
+    "0091: movw\t%ds, %ax",
+    "0093: movw\t%ax, %es",
+    "0095: movw\t$0x20b8, %si            # imm = 0x20B8",
+    "0098: movw\t$0x210c, %di            # imm = 0x210C",
+    "009B: callw\t0xf5 <.text+0xf5>",
+    "009E: pushw\t0x3a",
+    "00A2: pushw\t0x3c",
+    "00A6: pushw\t0x38",
+    "00AA: pushw\t0x3e",
+    "00AE: pushw\t0x40",
+    "00B2: lcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 00B3=2:1018",
+    "00B7: pushw\t%ax",
+    "00B8: cmpw\t$0x0, 0x49",
+    "00BD: jne\t0xc4 <.text+0xc4>",
+    "00BF: nop",
+    "00C0: pushw\t%cs",
+    "00C1: callw\t0x3fc7 <.text+0x3fc7>",
+    "00C4: nop",
+    "00C5: pushw\t%cs",
+    "00C6: callw\t0x3fdc <.text+0x3fdc>",
+    "00C9: movw\t%ds, %ax",
+    "00CB: movw\t%ax, %es",
+    "00CD: pushw\t%si",
+    "00CE: pushw\t%di",
+    "00CF: movw\t$0x210c, %si            # imm = 0x210C",
+    "00D2: movw\t$0x2118, %di            # imm = 0x2118",
+    "00D5: callw\t0x139 <.text+0x139>",
+    "00D8: popw\t%di",
+    "00D9: popw\t%si",
+    "00DA: lretw",
+    "00DB: lretw",
+    "00DC: lretw",
+    "00DD: movw\t%sp, %bp",
+    "00DF: movb\t0x4(%bp), %al",
+    "00E2: movb\t$0x4c, %ah",
+    "00E4: int\t$0x21",
+    "00E6: movb\t$-0x1, %al",
+    "00E8: pushw\t%ax",
+    "00E9: nop",
+    "00EA: pushw\t%cs",
+    "00EB: callw\t0x3fc7 <.text+0x3fc7>",
+    "00EE: movb\t$0x4c, %ah",
+    "00F0: int\t$0x21",
+    "00F2: movw\t%ss, %ax",
+    "00F4: lretw",
+    "00F5: movw\t$0x100, %ax             # imm = 0x100",
+    "00F8: movw\t%di, %dx",
+    "00FA: movw\t%si, %bx",
+    "00FC: cmpw\t%di, %bx",
+    "00FE: je\t0x119 <.text+0x119>",
+    "0100: cmpb\t$-0x1, %es:(%bx)",
+    "0104: je\t0x114 <.text+0x114>",
+    "0106: movb\t%es:0x1(%bx), %cl",
+    "010A: xorb\t%ch, %ch",
+    "010C: cmpw\t%ax, %cx",
+    "010E: jae\t0x114 <.text+0x114>",
+    "0110: movw\t%cx, %ax",
+    "0112: movw\t%bx, %dx",
+    "0114: addw\t$0x6, %bx",
+    "0117: jmp\t0xfc <.text+0xfc>",
+    "0119: cmpw\t%di, %dx",
+    "011B: je\t0x138 <.text+0x138>",
+    "011D: movw\t%dx, %bx",
+    "011F: cmpb\t$0x0, %es:(%bx)"
+  ],
+  "data_segments": [
+    {
+      "segment": 41,
+      "file_offset": "0x9C400",
+      "size": 800,
+      "minalloc": 800,
+      "bss_bytes": 0,
+      "flags": "0xc51",
+      "relocations": 0
+    },
+    {
+      "segment": 42,
+      "file_offset": "0x9C740",
+      "size": 600,
+      "minalloc": 600,
+      "bss_bytes": 0,
+      "flags": "0xc51",
+      "relocations": 0
+    },
+    {
+      "segment": 43,
+      "file_offset": "0x9C9C0",
+      "size": 168,
+      "minalloc": 168,
+      "bss_bytes": 0,
+      "flags": "0xc51",
+      "relocations": 0
+    },
+    {
+      "segment": 44,
+      "file_offset": "0x9CA80",
+      "size": 838,
+      "minalloc": 838,
+      "bss_bytes": 0,
+      "flags": "0xc51",
+      "relocations": 0
+    },
+    {
+      "segment": 45,
+      "file_offset": "0x9CDE0",
+      "size": 128,
+      "minalloc": 128,
+      "bss_bytes": 0,
+      "flags": "0xc51",
+      "relocations": 0
+    },
+    {
+      "segment": 46,
+      "file_offset": "0x9CE80",
+      "size": 208,
+      "minalloc": 208,
+      "bss_bytes": 0,
+      "flags": "0xc51",
+      "relocations": 0
+    },
+    {
+      "segment": 47,
+      "file_offset": "0x9CF60",
+      "size": 1090,
+      "minalloc": 1090,
+      "bss_bytes": 0,
+      "flags": "0xc51",
+      "relocations": 0
+    },
+    {
+      "segment": 48,
+      "file_offset": "0x9D3C0",
+      "size": 8192,
+      "minalloc": 8192,
+      "bss_bytes": 0,
+      "flags": "0xc51",
+      "relocations": 0
+    },
+    {
+      "segment": 49,
+      "file_offset": "0x9F3E0",
+      "size": 9230,
+      "minalloc": 9230,
+      "bss_bytes": 0,
+      "flags": "0xd51",
+      "relocations": 102
+    }
+  ],
+  "ahshift_total": 128,
+  "ahshift_by_segment": {
+    "1": 3,
+    "13": 14,
+    "14": 28,
+    "29": 4,
+    "30": 2,
+    "31": 12,
+    "34": 3,
+    "35": 56,
+    "39": 6
+  },
+  "ahshift_instruction_patterns": {
+    "movw\t$0xffff, %cx            # imm = 0xFFFF": 128
+  },
+  "ahshift_samples": [
+    {
+      "segment": 1,
+      "site": "0x3446",
+      "window": [
+        "343F: subw\t%ax, -0x18(%bp)",
+        "3442: sbbw\t$0x0, %dx",
+        "3445: movw\t$0xffff, %cx            # imm = 0xFFFF ; NE 3446=KERNEL!113",
+        "3448: shlw\t%cl, %dx",
+        "344A: addw\t%dx, -0x16(%bp)"
+      ]
+    },
+    {
+      "segment": 1,
+      "site": "0x3345",
+      "window": [
+        "333E: addw\t0x6(%bp), %ax",
+        "3341: adcw\t$0x0, %dx",
+        "3344: movw\t$0xffff, %cx            # imm = 0xFFFF ; NE 3345=KERNEL!113",
+        "3347: shlw\t%cl, %dx",
+        "3349: addw\t0x8(%bp), %dx"
+      ]
+    },
+    {
+      "segment": 1,
+      "site": "0x3748",
+      "window": [
+        "3741: addw\t%ax, -0x1a(%bp)",
+        "3744: adcw\t$0x0, %dx",
+        "3747: movw\t$0xffff, %cx            # imm = 0xFFFF ; NE 3748=KERNEL!113",
+        "374A: shlw\t%cl, %dx",
+        "374C: addw\t%dx, -0x18(%bp)"
+      ]
+    },
+    {
+      "segment": 13,
+      "site": "0x07DE",
+      "window": [
+        "07D8: addw\t%ax, -0x6(%bp)",
+        "07DB: adcw\t%dx, %bx",
+        "07DD: movw\t$0xffff, %cx            # imm = 0xFFFF ; NE 07DE=KERNEL!113",
+        "07E0: shlw\t%cl, %bx",
+        "07E2: addw\t%bx, -0x4(%bp)"
+      ]
+    },
+    {
+      "segment": 13,
+      "site": "0x0571",
+      "window": [
+        "0569: addw\t$0x1, 0x12(%bp)",
+        "056D: adcw\t$0x0, %ax",
+        "0570: movw\t$0xffff, %cx            # imm = 0xFFFF ; NE 0571=KERNEL!113",
+        "0573: shlw\t%cl, %ax",
+        "0575: addw\t%ax, 0x14(%bp)"
+      ]
+    },
+    {
+      "segment": 13,
+      "site": "0x0552",
+      "window": [
+        "054A: addw\t$0x1, -0x6(%bp)",
+        "054E: adcw\t$0x0, %ax",
+        "0551: movw\t$0xffff, %cx            # imm = 0xFFFF ; NE 0552=KERNEL!113",
+        "0554: shlw\t%cl, %ax",
+        "0556: addw\t%ax, -0x4(%bp)"
+      ]
+    },
+    {
+      "segment": 13,
+      "site": "0x0519",
+      "window": [
+        "0511: addw\t$0x1, -0x6(%bp)",
+        "0515: adcw\t$0x0, %ax",
+        "0518: movw\t$0xffff, %cx            # imm = 0xFFFF ; NE 0519=KERNEL!113",
+        "051B: shlw\t%cl, %ax",
+        "051D: addw\t%ax, -0x4(%bp)"
+      ]
+    },
+    {
+      "segment": 13,
+      "site": "0x04EA",
+      "window": [
+        "04E2: addw\t$0x1, -0x6(%bp)",
+        "04E6: adcw\t$0x0, %ax",
+        "04E9: movw\t$0xffff, %cx            # imm = 0xFFFF ; NE 04EA=KERNEL!113",
+        "04EC: shlw\t%cl, %ax",
+        "04EE: addw\t%ax, -0x4(%bp)"
+      ]
+    },
+    {
+      "segment": 13,
+      "site": "0x04C9",
+      "window": [
+        "04C1: addw\t$0x1, -0x6(%bp)",
+        "04C5: adcw\t$0x0, %ax",
+        "04C8: movw\t$0xffff, %cx            # imm = 0xFFFF ; NE 04C9=KERNEL!113",
+        "04CB: shlw\t%cl, %ax",
+        "04CD: addw\t%ax, -0x4(%bp)"
+      ]
+    },
+    {
+      "segment": 13,
+      "site": "0x0485",
+      "window": [
+        "047D: addw\t$0x1, -0x6(%bp)",
+        "0481: adcw\t$0x0, %ax",
+        "0484: movw\t$0xffff, %cx            # imm = 0xFFFF ; NE 0485=KERNEL!113",
+        "0487: shlw\t%cl, %ax",
+        "0489: addw\t%ax, -0x4(%bp)"
+      ]
+    },
+    {
+      "segment": 13,
+      "site": "0x044E",
+      "window": [
+        "0448: addw\t%ax, -0x6(%bp)",
+        "044B: adcw\t%dx, %bx",
+        "044D: movw\t$0xffff, %cx            # imm = 0xFFFF ; NE 044E=KERNEL!113",
+        "0450: shlw\t%cl, %bx",
+        "0452: addw\t%bx, -0x4(%bp)"
+      ]
+    },
+    {
+      "segment": 13,
+      "site": "0x08F4",
+      "window": [
+        "08EC: addw\t$0x1, 0x12(%bp)",
+        "08F0: adcw\t$0x0, %ax",
+        "08F3: movw\t$0xffff, %cx            # imm = 0xFFFF ; NE 08F4=KERNEL!113",
+        "08F6: shlw\t%cl, %ax",
+        "08F8: addw\t%ax, 0x14(%bp)"
+      ]
+    },
+    {
+      "segment": 13,
+      "site": "0x08D5",
+      "window": [
+        "08CD: subw\t$0x1, -0x6(%bp)",
+        "08D1: sbbw\t$0x0, %ax",
+        "08D4: movw\t$0xffff, %cx            # imm = 0xFFFF ; NE 08D5=KERNEL!113",
+        "08D7: shlw\t%cl, %ax",
+        "08D9: addw\t%ax, -0x4(%bp)"
+      ]
+    },
+    {
+      "segment": 13,
+      "site": "0x089C",
+      "window": [
+        "0894: subw\t$0x1, -0x6(%bp)",
+        "0898: sbbw\t$0x0, %ax",
+        "089B: movw\t$0xffff, %cx            # imm = 0xFFFF ; NE 089C=KERNEL!113",
+        "089E: shlw\t%cl, %ax",
+        "08A0: addw\t%ax, -0x4(%bp)"
+      ]
+    },
+    {
+      "segment": 13,
+      "site": "0x086D",
+      "window": [
+        "0865: subw\t$0x1, -0x6(%bp)",
+        "0869: sbbw\t$0x0, %ax",
+        "086C: movw\t$0xffff, %cx            # imm = 0xFFFF ; NE 086D=KERNEL!113",
+        "086F: shlw\t%cl, %ax",
+        "0871: addw\t%ax, -0x4(%bp)"
+      ]
+    }
+  ],
+  "win87em_total": 6,
+  "win87em_sites": [
+    {
+      "segment": 1,
+      "site": "0x3234",
+      "source_type": 3,
+      "flags": 1,
+      "window": [
+        "322A: callw\t0x4337 <.text+0x4337>",
+        "322D: popw\t%ax",
+        "322E: popw\t%ds",
+        "322F: lretw",
+        "3230: movw\t$0x1, %bx",
+        "3233: lcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 3234=WIN87EM!1",
+        "3238: lretw",
+        "3239: movw\t$0x2, %bx",
+        "323C: lcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 323D=WIN87EM!1",
+        "3241: retw"
+      ]
+    },
+    {
+      "segment": 1,
+      "site": "0x323D",
+      "source_type": 3,
+      "flags": 1,
+      "window": [
+        "322F: lretw",
+        "3230: movw\t$0x1, %bx",
+        "3233: lcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 3234=WIN87EM!1",
+        "3238: lretw",
+        "3239: movw\t$0x2, %bx",
+        "323C: lcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 323D=WIN87EM!1",
+        "3241: retw",
+        "3242: cmpw\t$0x0, 0x47",
+        "3247: je\t0x3253 <.text+0x3253>",
+        "3249: pushw\t%ds"
+      ]
+    },
+    {
+      "segment": 1,
+      "site": "0x3257",
+      "source_type": 5,
+      "flags": 1,
+      "window": [
+        "3247: je\t0x3253 <.text+0x3253>",
+        "3249: pushw\t%ds",
+        "324A: movw\t$0x1ece, %ax            # imm = 0x1ECE",
+        "324D: pushw\t%ax",
+        "324E: lcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 324F=KERNEL!95",
+        "3253: movw\t$0xffff, 0x20a4         # imm = 0xFFFF ; NE 3257=WIN87EM!1",
+        "3259: movw\t$0xffff, 0x20a6         # imm = 0xFFFF ; NE 325D=WIN87EM!1",
+        "325F: xorw\t%bx, %bx",
+        "3261: lcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 3262=WIN87EM!1",
+        "3266: movw\t$0x3, %bx"
+      ]
+    },
+    {
+      "segment": 1,
+      "site": "0x325D",
+      "source_type": 2,
+      "flags": 1,
+      "window": [
+        "3249: pushw\t%ds",
+        "324A: movw\t$0x1ece, %ax            # imm = 0x1ECE",
+        "324D: pushw\t%ax",
+        "324E: lcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 324F=KERNEL!95",
+        "3253: movw\t$0xffff, 0x20a4         # imm = 0xFFFF ; NE 3257=WIN87EM!1",
+        "3259: movw\t$0xffff, 0x20a6         # imm = 0xFFFF ; NE 325D=WIN87EM!1",
+        "325F: xorw\t%bx, %bx",
+        "3261: lcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 3262=WIN87EM!1",
+        "3266: movw\t$0x3, %bx",
+        "3269: movw\t$0x0, %dx ; NE 326A=1:321F"
+      ]
+    },
+    {
+      "segment": 1,
+      "site": "0x3262",
+      "source_type": 3,
+      "flags": 1,
+      "window": [
+        "324D: pushw\t%ax",
+        "324E: lcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 324F=KERNEL!95",
+        "3253: movw\t$0xffff, 0x20a4         # imm = 0xFFFF ; NE 3257=WIN87EM!1",
+        "3259: movw\t$0xffff, 0x20a6         # imm = 0xFFFF ; NE 325D=WIN87EM!1",
+        "325F: xorw\t%bx, %bx",
+        "3261: lcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 3262=WIN87EM!1",
+        "3266: movw\t$0x3, %bx",
+        "3269: movw\t$0x0, %dx ; NE 326A=1:321F",
+        "326C: movw\t$0xffff, %ax            # imm = 0xFFFF ; NE 326D=1:321F",
+        "326F: lcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 3270=WIN87EM!1"
+      ]
+    },
+    {
+      "segment": 1,
+      "site": "0x3270",
+      "source_type": 3,
+      "flags": 1,
+      "window": [
+        "325F: xorw\t%bx, %bx",
+        "3261: lcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 3262=WIN87EM!1",
+        "3266: movw\t$0x3, %bx",
+        "3269: movw\t$0x0, %dx ; NE 326A=1:321F",
+        "326C: movw\t$0xffff, %ax            # imm = 0xFFFF ; NE 326D=1:321F",
+        "326F: lcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 3270=WIN87EM!1",
+        "3274: retw",
+        "3275: jmpw\t*0x20a8",
+        "3279: addb\t%al, 0x55(%di)",
+        "327C: movw\t%sp, %bp"
+      ]
+    }
+  ],
+  "x87_segments": {
+    "1": {
+      "count": 187,
+      "first_offset": "0x0BEB",
+      "last_offset": "0x4224",
+      "sample": [
+        [
+          "0x0BEB",
+          "wait"
+        ],
+        [
+          "0x0BEC",
+          "fldl\t0x4(%bp)"
+        ],
+        [
+          "0x0BF1",
+          "wait"
+        ],
+        [
+          "0x0BF2",
+          "fnstcw\t-0x2(%bp)"
+        ],
+        [
+          "0x0BF9",
+          "wait"
+        ],
+        [
+          "0x0C00",
+          "wait"
+        ],
+        [
+          "0x0C01",
+          "fldcw\t-0x4(%bp)"
+        ],
+        [
+          "0x0C04",
+          "wait"
+        ]
+      ]
+    },
+    "6": {
+      "count": 4,
+      "first_offset": "0x2DE1",
+      "last_offset": "0x35B4",
+      "sample": [
+        [
+          "0x2DE1",
+          "fldcw\t(%di)"
+        ],
+        [
+          "0x2DF3",
+          "fldcw\t(%di)"
+        ],
+        [
+          "0x2DF5",
+          "fldcw\t(%di)"
+        ],
+        [
+          "0x35B4",
+          "wait"
+        ]
+      ]
+    },
+    "9": {
+      "count": 1,
+      "first_offset": "0x1446",
+      "last_offset": "0x1446",
+      "sample": [
+        [
+          "0x1446",
+          "fsts\t(%bp,%di)"
+        ]
+      ]
+    },
+    "14": {
+      "count": 1,
+      "first_offset": "0x2B4B",
+      "last_offset": "0x2B4B",
+      "sample": [
+        [
+          "0x2B4B",
+          "fsubrl\t(%bp,%si)"
+        ]
+      ]
+    },
+    "19": {
+      "count": 1,
+      "first_offset": "0x3003",
+      "last_offset": "0x3003",
+      "sample": [
+        [
+          "0x3003",
+          "fildll\t(%bx)"
+        ]
+      ]
+    },
+    "25": {
+      "count": 1,
+      "first_offset": "0x15DF",
+      "last_offset": "0x15DF",
+      "sample": [
+        [
+          "0x15DF",
+          "ficoml\t(%di)"
+        ]
+      ]
+    },
+    "29": {
+      "count": 2,
+      "first_offset": "0x1EB8",
+      "last_offset": "0x2644",
+      "sample": [
+        [
+          "0x1EB8",
+          "fistpl\t(%di)"
+        ],
+        [
+          "0x2644",
+          "fldenv\t(%di)"
+        ]
+      ]
+    },
+    "40": {
+      "count": 2,
+      "first_offset": "0x0D89",
+      "last_offset": "0x362A",
+      "sample": [
+        [
+          "0x0D89",
+          "wait"
+        ],
+        [
+          "0x362A",
+          "fmuls\t0x26c2(%bp)"
+        ]
+      ]
+    }
+  },
+  "x87_mnemonic_counts": {
+    "wait": 100,
+    "fldt": 16,
+    "fmulp": 10,
+    "flds": 9,
+    "fldz": 7,
+    "fstpt": 7,
+    "fldl": 6,
+    "fldcw": 5,
+    "fstpl": 5,
+    "fstps": 4,
+    "fnstsw": 3,
+    "fchs": 2,
+    "fildll": 2,
+    "fdivrp": 2,
+    "fstp": 2,
+    "fcomp": 2,
+    "fmuls": 2,
+    "fnstcw": 1,
+    "fxam": 1,
+    "fld": 1,
+    "fidivs": 1,
+    "fimuls": 1,
+    "frndint": 1,
+    "fld1": 1,
+    "fmull": 1,
+    "fdivrs": 1,
+    "fildl": 1,
+    "fsts": 1,
+    "fsubrl": 1,
+    "ficoml": 1,
+    "fistpl": 1,
+    "fldenv": 1
+  }
+}

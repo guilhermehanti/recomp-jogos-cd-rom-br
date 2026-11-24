@@ -1,0 +1,51 @@
+# Imagens de CD / jogos originais (NUNCA subir no Git)
+*.iso
+*.ISO
+*.bin
+*.BIN
+*.cue
+*.CUE
+*.img
+*.nrg
+*.mdf
+*.mds
+*.MHK
+*.mhk
+*.smk
+*.SMK
+*.wav
+*.WAV
+*.pag
+*.PAG
+*.str
+*.STR
+
+# Pastas de dados/saves geradas em tempo de execucao
+*-data/
+oficina-data/
+orly-data/
+saves/
+test-appdata/
+
+# Artefatos de compilacao e pacotes de Release
+build/
+dist/
+releases/
+*.exe
+*.dll
+*.lib
+*.exp
+*.obj
+*.o
+*.res
+*.pdb
+*.log
+*.err
+*.out
+__pycache__/
+*.pyc
+
+# Disassembly / codigo levantado do executavel original (Big Job)
+games/bigjob-br/analysis/disassembly/
+games/bigjob-br/analysis/disassembly-resync/
+games/bigjob-br/build/

@@ -1,0 +1,4 @@
+EXPORTS
+ OpenPrinterA=_diagOpen@12
+ ClosePrinter=_diagClose@4
+ DocumentPropertiesA=_diagProps@24

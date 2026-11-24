@@ -1,0 +1,442 @@
+{
+  "GDI!2": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "definition": "2   pascal -ret16 SetBkMode(word word) SetBkMode16"
+  },
+  "GDI!3": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "definition": "3   pascal -ret16 SetMapMode(word word) SetMapMode16"
+  },
+  "GDI!9": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "definition": "9   pascal   SetTextColor(word long) SetTextColor16"
+  },
+  "GDI!11": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "definition": "11  pascal   SetWindowOrg(word s_word s_word) SetWindowOrg16"
+  },
+  "GDI!12": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "definition": "12  pascal   SetWindowExt(word s_word s_word) SetWindowExt16"
+  },
+  "GDI!14": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "definition": "14  pascal   SetViewportExt(word s_word s_word) SetViewportExt16"
+  },
+  "GDI!38": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "definition": "38  pascal   Escape(word word word segptr ptr) Escape16"
+  },
+  "GDI!44": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "definition": "44  pascal -ret16 SelectClipRgn(word word) SelectClipRgn16"
+  },
+  "GDI!45": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "definition": "45  pascal -ret16 SelectObject(word word) SelectObject16"
+  },
+  "GDI!53": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "definition": "53  pascal -ret16 CreateDC(str str str ptr) CreateDC16"
+  },
+  "GDI!57": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "definition": "57  pascal -ret16 CreateFontIndirect(ptr) CreateFontIndirect16"
+  },
+  "GDI!64": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "definition": "64  pascal -ret16 CreateRectRgn(s_word s_word s_word s_word) CreateRectRgn16"
+  },
+  "GDI!67": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "definition": "67  pascal -ret16 DPtoLP(word ptr s_word) DPtoLP16"
+  },
+  "GDI!68": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "definition": "68  pascal -ret16 DeleteDC(word) DeleteDC16"
+  },
+  "GDI!69": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "definition": "69  pascal -ret16 DeleteObject(word) DeleteObject16"
+  },
+  "GDI!77": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "definition": "77  pascal -ret16 GetClipBox(word ptr) GetClipBox16"
+  },
+  "GDI!80": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "definition": "80  pascal -ret16 GetDeviceCaps(word s_word) GetDeviceCaps16"
+  },
+  "GDI!87": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "definition": "87  pascal -ret16 GetStockObject(word) GetStockObject16"
+  },
+  "GDI!91": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "definition": "91  pascal   GetTextExtent(word ptr s_word) GetTextExtent16"
+  },
+  "GDI!97": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "definition": "97  pascal   GetWindowOrg(word) GetWindowOrg16"
+  },
+  "GDI!128": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "definition": "128 pascal -ret16 MulDiv(s_word s_word s_word) MulDiv16"
+  },
+  "GDI!360": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "definition": "360 pascal -ret16 CreatePalette(ptr) CreatePalette16"
+  },
+  "GDI!377": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "definition": "377 pascal -ret16 StartDoc(word ptr) StartDoc16"
+  },
+  "GDI!378": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "definition": "378 pascal -ret16 EndDoc(word) EndDoc16"
+  },
+  "GDI!439": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "definition": "439 pascal -ret16 StretchDIBits (word s_word s_word s_word s_word s_word s_word s_word s_word ptr ptr word long) StretchDIBits16"
+  },
+  "KERNEL!3": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "definition": "3   pascal GetVersion() GetVersion16"
+  },
+  "KERNEL!15": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "definition": "15  pascal -ret16 GlobalAlloc(word long) GlobalAlloc16"
+  },
+  "KERNEL!16": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "definition": "16  pascal -ret16 GlobalReAlloc(word long word) GlobalReAlloc16"
+  },
+  "KERNEL!17": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "definition": "17  pascal -ret16 GlobalFree(word) GlobalFree16"
+  },
+  "KERNEL!18": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "definition": "18  pascal GlobalLock(word) WIN16_GlobalLock16"
+  },
+  "KERNEL!19": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "definition": "19  pascal -ret16 GlobalUnlock(word) GlobalUnlock16"
+  },
+  "KERNEL!20": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "definition": "20  pascal GlobalSize(word) GlobalSize16"
+  },
+  "KERNEL!21": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "definition": "21  pascal GlobalHandle(word) GlobalHandle16"
+  },
+  "KERNEL!25": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "definition": "25  pascal GlobalCompact(long) GlobalCompact16"
+  },
+  "KERNEL!30": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "definition": "30  pascal -ret16 WaitEvent(word) WaitEvent16"
+  },
+  "KERNEL!36": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "definition": "36  pascal   GetCurrentTask() WIN16_GetCurrentTask"
+  },
+  "KERNEL!47": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "definition": "47  pascal   GetModuleHandle(segstr) WIN16_GetModuleHandle"
+  },
+  "KERNEL!48": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "definition": "48  pascal -ret16 GetModuleUsage(word) GetModuleUsage16"
+  },
+  "KERNEL!49": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "definition": "49  pascal -ret16 GetModuleFileName(word ptr s_word) GetModuleFileName16"
+  },
+  "KERNEL!50": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "definition": "50  pascal GetProcAddress(word str) GetProcAddress16"
+  },
+  "KERNEL!51": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "definition": "51  pascal MakeProcInstance(segptr word) MakeProcInstance16"
+  },
+  "KERNEL!52": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "definition": "52  pascal -ret16 FreeProcInstance(segptr) FreeProcInstance16"
+  },
+  "KERNEL!58": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "definition": "58  pascal -ret16 GetProfileString(str str str ptr word) GetProfileString16"
+  },
+  "KERNEL!60": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "definition": "60  pascal -ret16 FindResource(word str str) FindResource16"
+  },
+  "KERNEL!74": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "definition": "74  pascal -ret16 OpenFile(str ptr word) OpenFile16"
+  },
+  "KERNEL!81": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "definition": "81  pascal -ret16 _lclose(word) _lclose16"
+  },
+  "KERNEL!83": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "definition": "83  pascal -ret16 _lcreat(str word) _lcreat16"
+  },
+  "KERNEL!84": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "definition": "84  pascal   _llseek(word long word) _llseek16"
+  },
+  "KERNEL!85": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "definition": "85  pascal -ret16 _lopen(str word) _lopen16"
+  },
+  "KERNEL!91": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "definition": "91  pascal -register InitTask() InitTask16"
+  },
+  "KERNEL!95": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "definition": "95  pascal -ret16 LoadLibrary(str) LoadLibrary16"
+  },
+  "KERNEL!96": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "definition": "96  pascal -ret16 FreeLibrary(word) FreeLibrary16"
+  },
+  "KERNEL!107": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "definition": "107 pascal -ret16 SetErrorMode(word) SetErrorMode16"
+  },
+  "KERNEL!113": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "definition": "113 equate __AHSHIFT 3"
+  },
+  "KERNEL!128": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "definition": "128 pascal -ret16 GetPrivateProfileString(str str str ptr word str) GetPrivateProfileString16"
+  },
+  "KERNEL!129": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "definition": "129 pascal -ret16 WritePrivateProfileString(str str str str) WritePrivateProfileString16"
+  },
+  "KERNEL!132": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "definition": "132 pascal GetWinFlags() GetWinFlags16"
+  },
+  "KERNEL!134": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "definition": "134 pascal -ret16 GetWindowsDirectory(ptr word) GetWindowsDirectory16"
+  },
+  "KERNEL!150": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "definition": "150 pascal -ret16 DirectedYield(word) DirectedYield16"
+  },
+  "KERNEL!166": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "definition": "166 pascal -ret16 WinExec(str word) WinExec16"
+  },
+  "KERNEL!348": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "definition": "348 pascal -ret16 hmemcpy(ptr ptr long) hmemcpy16"
+  },
+  "KERNEL!349": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "definition": "349 pascal   _hread(word segptr long) WIN16_hread"
+  },
+  "KERNEL!350": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "definition": "350 pascal   _hwrite(word ptr long) _hwrite16"
+  },
+  "MMSYSTEM!404": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/mmsystem.dll16/mmsystem.dll16.spec",
+    "definition": "404    pascal  waveOutOpen(ptr word ptr long long long) waveOutOpen16"
+  },
+  "MMSYSTEM!405": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/mmsystem.dll16/mmsystem.dll16.spec",
+    "definition": "405    pascal  waveOutClose(word) waveOutClose16"
+  },
+  "MMSYSTEM!406": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/mmsystem.dll16/mmsystem.dll16.spec",
+    "definition": "406    pascal  waveOutPrepareHeader(word segptr word) waveOutPrepareHeader16"
+  },
+  "MMSYSTEM!407": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/mmsystem.dll16/mmsystem.dll16.spec",
+    "definition": "407    pascal  waveOutUnprepareHeader(word segptr word) waveOutUnprepareHeader16"
+  },
+  "MMSYSTEM!408": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/mmsystem.dll16/mmsystem.dll16.spec",
+    "definition": "408    pascal  waveOutWrite(word segptr word) waveOutWrite16"
+  },
+  "MMSYSTEM!411": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/mmsystem.dll16/mmsystem.dll16.spec",
+    "definition": "411    pascal  waveOutReset(word) waveOutReset16"
+  },
+  "MMSYSTEM!607": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/mmsystem.dll16/mmsystem.dll16.spec",
+    "definition": "607    pascal  timeGetTime() timeGetTime16"
+  },
+  "USER!1": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/user.exe16/user.exe16.spec",
+    "definition": "1   pascal -ret16 MessageBox(word str str word) MessageBox16"
+  },
+  "USER!5": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/user.exe16/user.exe16.spec",
+    "definition": "5   pascal -ret16 InitApp(word) InitApp16"
+  },
+  "USER!6": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/user.exe16/user.exe16.spec",
+    "definition": "6   pascal -ret16 PostQuitMessage(word) PostQuitMessage16"
+  },
+  "USER!18": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/user.exe16/user.exe16.spec",
+    "definition": "18  pascal -ret16 SetCapture(word) SetCapture16"
+  },
+  "USER!19": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/user.exe16/user.exe16.spec",
+    "definition": "19  pascal -ret16 ReleaseCapture() ReleaseCapture16"
+  },
+  "USER!39": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/user.exe16/user.exe16.spec",
+    "definition": "39  pascal -ret16 BeginPaint(word ptr) BeginPaint16"
+  },
+  "USER!40": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/user.exe16/user.exe16.spec",
+    "definition": "40  pascal -ret16 EndPaint(word ptr) EndPaint16"
+  },
+  "USER!41": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/user.exe16/user.exe16.spec",
+    "definition": "41  pascal -ret16 CreateWindow(str str long s_word s_word s_word s_word word word word segptr) CreateWindow16"
+  },
+  "USER!42": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/user.exe16/user.exe16.spec",
+    "definition": "42  pascal -ret16 ShowWindow(word word) ShowWindow16"
+  },
+  "USER!53": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/user.exe16/user.exe16.spec",
+    "definition": "53  pascal -ret16 DestroyWindow(word) DestroyWindow16"
+  },
+  "USER!57": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/user.exe16/user.exe16.spec",
+    "definition": "57  pascal -ret16 RegisterClass(ptr) RegisterClass16"
+  },
+  "USER!66": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/user.exe16/user.exe16.spec",
+    "definition": "66  pascal -ret16 GetDC(word) GetDC16"
+  },
+  "USER!68": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/user.exe16/user.exe16.spec",
+    "definition": "68  pascal -ret16 ReleaseDC(word word) ReleaseDC16"
+  },
+  "USER!69": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/user.exe16/user.exe16.spec",
+    "definition": "69  pascal -ret16 SetCursor(word) SetCursor16"
+  },
+  "USER!71": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/user.exe16/user.exe16.spec",
+    "definition": "71  pascal -ret16 ShowCursor(word) ShowCursor16"
+  },
+  "USER!81": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/user.exe16/user.exe16.spec",
+    "definition": "81  pascal -ret16 FillRect(word ptr word) FillRect16"
+  },
+  "USER!85": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/user.exe16/user.exe16.spec",
+    "definition": "85  pascal -ret16 DrawText(word str s_word ptr word) DrawText16"
+  },
+  "USER!102": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/user.exe16/user.exe16.spec",
+    "definition": "102 pascal -ret16 AdjustWindowRect(ptr long word) AdjustWindowRect16"
+  },
+  "USER!107": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/user.exe16/user.exe16.spec",
+    "definition": "107 pascal   DefWindowProc(word word word long) DefWindowProc16"
+  },
+  "USER!109": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/user.exe16/user.exe16.spec",
+    "definition": "109 pascal -ret16 PeekMessage(ptr word word word word) PeekMessage16"
+  },
+  "USER!113": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/user.exe16/user.exe16.spec",
+    "definition": "113 pascal -ret16 TranslateMessage(ptr) TranslateMessage16"
+  },
+  "USER!114": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/user.exe16/user.exe16.spec",
+    "definition": "114 pascal   DispatchMessage(ptr) DispatchMessage16"
+  },
+  "USER!116": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/user.exe16/user.exe16.spec",
+    "definition": "116 pascal -ret16 PostAppMessage(word word word long) PostAppMessage16"
+  },
+  "USER!125": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/user.exe16/user.exe16.spec",
+    "definition": "125 pascal -ret16 InvalidateRect(word ptr word) InvalidateRect16"
+  },
+  "USER!135": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/user.exe16/user.exe16.spec",
+    "definition": "135 pascal   GetWindowLong(word s_word) GetWindowLong16"
+  },
+  "USER!136": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/user.exe16/user.exe16.spec",
+    "definition": "136 pascal   SetWindowLong(word s_word long) SetWindowLong16"
+  },
+  "USER!173": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/user.exe16/user.exe16.spec",
+    "definition": "173 pascal -ret16 LoadCursor(word str) LoadCursor16"
+  },
+  "USER!174": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/user.exe16/user.exe16.spec",
+    "definition": "174 pascal -ret16 LoadIcon(word str) LoadIcon16"
+  },
+  "USER!176": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/user.exe16/user.exe16.spec",
+    "definition": "176 pascal -ret16 LoadString(word word ptr s_word) LoadString16"
+  },
+  "USER!177": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/user.exe16/user.exe16.spec",
+    "definition": "177 pascal -ret16 LoadAccelerators(word str) LoadAccelerators16"
+  },
+  "USER!178": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/user.exe16/user.exe16.spec",
+    "definition": "178 pascal -ret16 TranslateAccelerator(word word ptr) TranslateAccelerator16"
+  },
+  "USER!179": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/user.exe16/user.exe16.spec",
+    "definition": "179 pascal -ret16 GetSystemMetrics(s_word) GetSystemMetrics16"
+  },
+  "USER!221": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/user.exe16/user.exe16.spec",
+    "definition": "221 pascal -ret16 ScrollDC(word s_word s_word ptr ptr word ptr) ScrollDC16"
+  },
+  "USER!225": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/user.exe16/user.exe16.spec",
+    "definition": "225 pascal -ret16 EnumTaskWindows(word segptr long) EnumTaskWindows16"
+  },
+  "USER!229": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/user.exe16/user.exe16.spec",
+    "definition": "229 pascal -ret16 GetTopWindow(word) GetTopWindow16"
+  },
+  "USER!282": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/user.exe16/user.exe16.spec",
+    "definition": "282 pascal -ret16 SelectPalette(word word word) SelectPalette16"
+  },
+  "USER!283": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/user.exe16/user.exe16.spec",
+    "definition": "283 pascal -ret16 RealizePalette(word) RealizePalette16"
+  },
+  "USER!420": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/user.exe16/user.exe16.spec",
+    "definition": "420 varargs -ret16 _wsprintf(ptr str) wsprintf16"
+  },
+  "USER!483": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/user.exe16/user.exe16.spec",
+    "definition": "483 pascal -ret16 SystemParametersInfo(word word ptr word) SystemParametersInfo16"
+  },
+  "WIN87EM!1": {
+    "url": "https://github.com/wine-mirror/wine/blob/master/dlls/win87em.dll16/win87em.dll16.spec",
+    "definition": "1 pascal -register __fpMath()"
+  }
+}

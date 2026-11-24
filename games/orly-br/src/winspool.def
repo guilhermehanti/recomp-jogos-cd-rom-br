@@ -1,0 +1,5 @@
+LIBRARY winspool.dll
+EXPORTS
+    OpenPrinterA=winspool.drv.OpenPrinterA
+    DocumentPropertiesA=winspool.drv.DocumentPropertiesA
+    ClosePrinter=winspool.drv.ClosePrinter

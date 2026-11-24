@@ -1,0 +1,23 @@
+{
+  "app_id": "101dalmatas",
+  "executable_name": "101 Dalmatas - Livro Animado Interativo.exe",
+  "output_folder": "101 Dalmatas - Livro Animado Interativo",
+  "display_name": "101 Dálmatas - Livro Animado Interativo",
+  "engine": "mediastation",
+  "game_id": "101dalmatians",
+  "target_name": "101dalmatians-win-br",
+  "expected_language": "br",
+  "expected_platform": "windows",
+  "expected_extra": "Brazilian Portuguese",
+  "runtime_icon_file": "101_ASB.EXE",
+  "icon": "tools/standalone/icons/101dalmatas.ico",
+  "extra_configure_flags": [
+    "--disable-bink",
+    "--disable-vorbis",
+    "--disable-flac",
+    "--disable-mad",
+    "--disable-fluidsynth",
+    "--disable-mt32emu",
+    "--disable-nuked-opl"
+  ]
+}

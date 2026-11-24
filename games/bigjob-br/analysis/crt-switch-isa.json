@@ -1,0 +1,1911 @@
+{
+  "int_sites": [
+    {
+      "segment": 1,
+      "offset": "0x005F",
+      "inst": "int\t$0x21",
+      "window": [
+        "004D: pushw\t0x3a",
+        "0051: lcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 0052=USER!5",
+        "0056: orw\t%ax, %ax",
+        "0058: jne\t0x5d <.text+0x5d>",
+        "005A: jmp\t0xe6 <.text+0xe6>",
+        "005D: movb\t$0x30, %ah",
+        "005F: int\t$0x21",
+        "0061: movw\t%ax, 0x42",
+        "0064: lcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 0065=KERNEL!132"
+      ]
+    },
+    {
+      "segment": 1,
+      "offset": "0x00E4",
+      "inst": "int\t$0x21",
+      "window": [
+        "00DA: lretw",
+        "00DB: lretw",
+        "00DC: lretw",
+        "00DD: movw\t%sp, %bp",
+        "00DF: movb\t0x4(%bp), %al",
+        "00E2: movb\t$0x4c, %ah",
+        "00E4: int\t$0x21",
+        "00E6: movb\t$-0x1, %al",
+        "00E8: pushw\t%ax"
+      ]
+    },
+    {
+      "segment": 1,
+      "offset": "0x00F0",
+      "inst": "int\t$0x21",
+      "window": [
+        "00E6: movb\t$-0x1, %al",
+        "00E8: pushw\t%ax",
+        "00E9: nop",
+        "00EA: pushw\t%cs",
+        "00EB: callw\t0x3fc7 <.text+0x3fc7>",
+        "00EE: movb\t$0x4c, %ah",
+        "00F0: int\t$0x21",
+        "00F2: movw\t%ss, %ax",
+        "00F4: lretw"
+      ]
+    },
+    {
+      "segment": 1,
+      "offset": "0x1E62",
+      "inst": "int\t$0x21",
+      "window": [
+        "1E57: pushw\t%bp",
+        "1E58: movw\t%sp, %bp",
+        "1E5A: pushw\t%si",
+        "1E5B: pushw\t%di",
+        "1E5C: movw\t$0x4400, %ax            # imm = 0x4400",
+        "1E5F: movw\t0x6(%bp), %bx",
+        "1E62: int\t$0x21",
+        "1E64: xchgw\t%dx, %ax",
+        "1E65: andw\t$0x80, %ax"
+      ]
+    },
+    {
+      "segment": 1,
+      "offset": "0x1E8D",
+      "inst": "int\t$0x21",
+      "window": [
+        "1E79: andw\t$0xfdff, 0x1992(%bx)    # imm = 0xFDFF",
+        "1E7F: movb\t$0x42, %ah",
+        "1E81: movb\t0xc(%bp), %al",
+        "1E84: movw\t0x6(%bp), %bx",
+        "1E87: movw\t0xa(%bp), %cx",
+        "1E8A: movw\t0x8(%bp), %dx",
+        "1E8D: int\t$0x21",
+        "1E8F: jb\t0x1e93 <.text+0x1e93>",
+        "1E91: jmp\t0x1e98 <.text+0x1e98>"
+      ]
+    },
+    {
+      "segment": 1,
+      "offset": "0x1EAA",
+      "inst": "int\t$0x21",
+      "window": [
+        "1EA0: movw\t%sp, %bp",
+        "1EA2: pushw\t%si",
+        "1EA3: pushw\t%di",
+        "1EA4: pushw\t%ds",
+        "1EA5: movb\t$0x41, %ah",
+        "1EA7: ldsw\t0x6(%bp), %dx",
+        "1EAA: int\t$0x21",
+        "1EAC: popw\t%ds",
+        "1EAD: jb\t0x1eb3 <.text+0x1eb3>"
+      ]
+    },
+    {
+      "segment": 1,
+      "offset": "0x2F31",
+      "inst": "int\t$0x21",
+      "window": [
+        "2F29: pushw\t%bp",
+        "2F2A: movw\t%sp, %bp",
+        "2F2C: pushw\t%si",
+        "2F2D: pushw\t%di",
+        "2F2E: pushw\t%ds",
+        "2F2F: movb\t$0x2f, %ah",
+        "2F31: int\t$0x21",
+        "2F33: pushw\t%es",
+        "2F34: pushw\t%bx"
+      ]
+    },
+    {
+      "segment": 1,
+      "offset": "0x2F3A",
+      "inst": "int\t$0x21",
+      "window": [
+        "2F2F: movb\t$0x2f, %ah",
+        "2F31: int\t$0x21",
+        "2F33: pushw\t%es",
+        "2F34: pushw\t%bx",
+        "2F35: movb\t$0x1a, %ah",
+        "2F37: ldsw\t0xa(%bp), %dx",
+        "2F3A: int\t$0x21",
+        "2F3C: movb\t$0x4e, %ah",
+        "2F3E: movw\t0xe(%bp), %cx"
+      ]
+    },
+    {
+      "segment": 1,
+      "offset": "0x2F44",
+      "inst": "int\t$0x21",
+      "window": [
+        "2F35: movb\t$0x1a, %ah",
+        "2F37: ldsw\t0xa(%bp), %dx",
+        "2F3A: int\t$0x21",
+        "2F3C: movb\t$0x4e, %ah",
+        "2F3E: movw\t0xe(%bp), %cx",
+        "2F41: ldsw\t0x6(%bp), %dx",
+        "2F44: int\t$0x21",
+        "2F46: pushfw",
+        "2F47: popw\t%cx"
+      ]
+    },
+    {
+      "segment": 1,
+      "offset": "0x2F4D",
+      "inst": "int\t$0x21",
+      "window": [
+        "2F46: pushfw",
+        "2F47: popw\t%cx",
+        "2F48: xchgw\t%bx, %ax",
+        "2F49: movb\t$0x1a, %ah",
+        "2F4B: popw\t%dx",
+        "2F4C: popw\t%ds",
+        "2F4D: int\t$0x21",
+        "2F4F: pushw\t%cx",
+        "2F50: popfw"
+      ]
+    },
+    {
+      "segment": 1,
+      "offset": "0x2F6A",
+      "inst": "int\t$0x21",
+      "window": [
+        "2F62: pushw\t%bp",
+        "2F63: movw\t%sp, %bp",
+        "2F65: pushw\t%si",
+        "2F66: pushw\t%di",
+        "2F67: pushw\t%ds",
+        "2F68: movb\t$0x2f, %ah",
+        "2F6A: int\t$0x21",
+        "2F6C: pushw\t%es",
+        "2F6D: pushw\t%bx"
+      ]
+    },
+    {
+      "segment": 1,
+      "offset": "0x2F73",
+      "inst": "int\t$0x21",
+      "window": [
+        "2F68: movb\t$0x2f, %ah",
+        "2F6A: int\t$0x21",
+        "2F6C: pushw\t%es",
+        "2F6D: pushw\t%bx",
+        "2F6E: movb\t$0x1a, %ah",
+        "2F70: ldsw\t0x6(%bp), %dx",
+        "2F73: int\t$0x21",
+        "2F75: movb\t$0x4f, %ah",
+        "2F77: int\t$0x21"
+      ]
+    },
+    {
+      "segment": 1,
+      "offset": "0x2F77",
+      "inst": "int\t$0x21",
+      "window": [
+        "2F6C: pushw\t%es",
+        "2F6D: pushw\t%bx",
+        "2F6E: movb\t$0x1a, %ah",
+        "2F70: ldsw\t0x6(%bp), %dx",
+        "2F73: int\t$0x21",
+        "2F75: movb\t$0x4f, %ah",
+        "2F77: int\t$0x21",
+        "2F79: pushfw",
+        "2F7A: popw\t%cx"
+      ]
+    },
+    {
+      "segment": 1,
+      "offset": "0x2F80",
+      "inst": "int\t$0x21",
+      "window": [
+        "2F79: pushfw",
+        "2F7A: popw\t%cx",
+        "2F7B: xchgw\t%bx, %ax",
+        "2F7C: movb\t$0x1a, %ah",
+        "2F7E: popw\t%dx",
+        "2F7F: popw\t%ds",
+        "2F80: int\t$0x21",
+        "2F82: pushw\t%cx",
+        "2F83: popfw"
+      ]
+    },
+    {
+      "segment": 1,
+      "offset": "0x2FA3",
+      "inst": "int\t$0x21",
+      "window": [
+        "2F98: pushw\t%si",
+        "2F99: pushw\t%di",
+        "2F9A: pushw\t%ds",
+        "2F9B: movb\t$0x56, %ah",
+        "2F9D: ldsw\t0x6(%bp), %dx",
+        "2FA0: lesw\t0xa(%bp), %di",
+        "2FA3: int\t$0x21",
+        "2FA5: popw\t%ds",
+        "2FA6: jb\t0x2fac <.text+0x2fac>"
+      ]
+    },
+    {
+      "segment": 1,
+      "offset": "0x3003",
+      "inst": "int\t$0x21",
+      "window": [
+        "2FF5: jmp\t0x301b <.text+0x301b>",
+        "2FF7: pushw\t%ds",
+        "2FF8: movb\t$0x40, %ah",
+        "2FFA: movw\t0x6(%bp), %bx",
+        "2FFD: movw\t0xc(%bp), %cx",
+        "3000: ldsw\t0x8(%bp), %dx",
+        "3003: int\t$0x21",
+        "3005: popw\t%ds",
+        "3006: jb\t0x3017 <.text+0x3017>"
+      ]
+    },
+    {
+      "segment": 1,
+      "offset": "0x4264",
+      "inst": "int\t$0x23",
+      "window": [
+        "4256: jmp\t0x4288 <.text+0x4288>",
+        "4258: jmpw\t*%cs:0xc(%bx)",
+        "425C: pushw\t$0x3",
+        "425E: pushw\t%ds",
+        "425F: pushw\t$0x2029                 # imm = 0x2029",
+        "4262: jmp\t0x428e <.text+0x428e>",
+        "4264: int\t$0x23",
+        "4266: jmp\t0x4296 <.text+0x4296>",
+        "4268: pushw\t$0x1"
+      ]
+    }
+  ],
+  "unresolved_jump_tables_decoded": [
+    {
+      "segment": 1,
+      "site": "0x1211",
+      "disp": "0x1216",
+      "detected_base": null,
+      "detected_count": null,
+      "keys_hex": [],
+      "targets": [],
+      "window": [
+        "11EE: movw\t$0x8000, -0x2(%bp)      # imm = 0x8000",
+        "11F3: movw\t$0xa, -0x4(%bp)",
+        "11F8: pushw\t%es",
+        "11F9: lesw\t0x10(%bp), %di",
+        "11FC: movw\t$0x7fff, %ax            # imm = 0x7FFF",
+        "11FF: movw\t0x4(%bp), %bx",
+        "1202: movw\t%es:(%bx,%di), %cx",
+        "1205: andw\t%cx, -0x2(%bp)",
+        "1208: andw\t%ax, %es:(%bx,%di)",
+        "120B: shrw\t%bx",
+        "120D: shrw\t%bx",
+        "120F: shlw\t%bx",
+        "1211: jmpw\t*%cs:0x1216(%bx)",
+        "1216: sbbb\t$0x12, %al",
+        "1218: andb\t(%bp,%si), %dl",
+        "121A: subb\t%dl, (%bp,%si)",
+        "121C: wait ; NE 121C=!0"
+      ]
+    },
+    {
+      "segment": 1,
+      "site": "0x3371",
+      "disp": "0x0020",
+      "detected_base": "0x34D1",
+      "detected_count": 16,
+      "keys_hex": [
+        "0x0004",
+        "0x0005",
+        "0x0006",
+        "0x0007",
+        "0x0024",
+        "0x0025",
+        "0x0084",
+        "0x0085",
+        "0x0086",
+        "0x0087",
+        "0x00A4",
+        "0x00A5",
+        "0x0106",
+        "0x0107",
+        "0x0124",
+        "0x0125"
+      ],
+      "targets": [
+        "0x3375",
+        "0x3382",
+        "0x3393",
+        "0x33AA",
+        "0x33C1",
+        "0x33CF",
+        "0x33DD",
+        "0x33EC",
+        "0x33FB",
+        "0x3409",
+        "0x3417",
+        "0x3426",
+        "0x339D",
+        "0x33B4",
+        "0x33C1",
+        "0x33CF"
+      ],
+      "window": [
+        "334F: movw\t%ax, -0x18(%bp)",
+        "3352: jmp\t0x344d <.text+0x344d>",
+        "3355: movw\t-0x14(%bp), %ax",
+        "3358: movw\t%ax, -0x12(%bp)",
+        "335B: movw\t$0x10, %cx",
+        "335E: movw\t$0x34d1, %bx            # imm = 0x34D1",
+        "3361: movw\t%cs:(%bx), %ax",
+        "3364: cmpw\t-0x12(%bp), %ax",
+        "3367: je\t0x3371 <.text+0x3371>",
+        "3369: addw\t$0x2, %bx",
+        "336C: loop\t0x3361 <.text+0x3361>",
+        "336E: jmp\t0x3435 <.text+0x3435>",
+        "3371: jmpw\t*%cs:0x20(%bx)",
+        "3375: pushw\t$0x2",
+        "3377: pushw\t-0x16(%bp)",
+        "337A: pushw\t-0x18(%bp)",
+        "337D: callw\t*-0x6(%bp)"
+      ]
+    },
+    {
+      "segment": 1,
+      "site": "0x36BA",
+      "disp": "0x0020",
+      "detected_base": "0x3793",
+      "detected_count": 16,
+      "keys_hex": [
+        "0x0004",
+        "0x0005",
+        "0x0006",
+        "0x0007",
+        "0x0024",
+        "0x0025",
+        "0x0084",
+        "0x0085",
+        "0x0086",
+        "0x0087",
+        "0x00A4",
+        "0x00A5",
+        "0x0106",
+        "0x0107",
+        "0x0124",
+        "0x0125"
+      ],
+      "targets": [
+        "0x36BE",
+        "0x36C9",
+        "0x36D7",
+        "0x36E2",
+        "0x36D7",
+        "0x36E2",
+        "0x36ED",
+        "0x36F9",
+        "0x3705",
+        "0x3711",
+        "0x371D",
+        "0x3729",
+        "0x36D7",
+        "0x36E2",
+        "0x36D7",
+        "0x36E2"
+      ],
+      "window": [
+        "3699: movw\t%ax, -0x1a(%bp)",
+        "369C: jmp\t0x374f <.text+0x374f>",
+        "369F: movw\t-0x16(%bp), %ax",
+        "36A2: movw\t%ax, -0x14(%bp)",
+        "36A5: movw\t$0x10, %cx",
+        "36A8: movw\t$0x3793, %bx            # imm = 0x3793",
+        "36AB: movw\t%cs:(%bx), %ax",
+        "36AE: cmpw\t-0x14(%bp), %ax",
+        "36B1: je\t0x36ba <.text+0x36ba>",
+        "36B3: addw\t$0x2, %bx",
+        "36B6: loop\t0x36ab <.text+0x36ab>",
+        "36B8: jmp\t0x3737 <.text+0x3737>",
+        "36BA: jmpw\t*%cs:0x20(%bx)",
+        "36BE: pushw\t-0x18(%bp)",
+        "36C1: pushw\t-0x1a(%bp)",
+        "36C4: callw\t*-0x6(%bp)",
+        "36C7: jmp\t0x36d2 <.text+0x36d2>"
+      ]
+    },
+    {
+      "segment": 1,
+      "site": "0x4258",
+      "disp": "0x000C",
+      "detected_base": "0x429B",
+      "detected_count": 6,
+      "keys_hex": [
+        "0x0002",
+        "0x0004",
+        "0x0008",
+        "0x000B",
+        "0x000F",
+        "0x0016"
+      ],
+      "targets": [
+        "0x4264",
+        "0x4268",
+        "0x4278",
+        "0x4270",
+        "0x4280",
+        "0x425C"
+      ],
+      "window": [
+        "423B: pushw\t%si",
+        "423C: pushw\t%di",
+        "423D: movw\t0x6(%bp), %ax",
+        "4240: movw\t%ax, -0x2(%bp)",
+        "4243: movw\t$0x6, %cx",
+        "4246: movw\t$0x429b, %bx            # imm = 0x429B",
+        "4249: movw\t%cs:(%bx), %ax",
+        "424C: cmpw\t-0x2(%bp), %ax",
+        "424F: je\t0x4258 <.text+0x4258>",
+        "4251: addw\t$0x2, %bx",
+        "4254: loop\t0x4249 <.text+0x4249>",
+        "4256: jmp\t0x4288 <.text+0x4288>",
+        "4258: jmpw\t*%cs:0xc(%bx)",
+        "425C: pushw\t$0x3",
+        "425E: pushw\t%ds",
+        "425F: pushw\t$0x2029                 # imm = 0x2029",
+        "4262: jmp\t0x428e <.text+0x428e>"
+      ]
+    },
+    {
+      "segment": 6,
+      "site": "0x05EF",
+      "disp": "0x0012",
+      "detected_base": "0x0627",
+      "detected_count": 9,
+      "keys_hex": [
+        "0x0004",
+        "0x0006",
+        "0x000C",
+        "0x000F",
+        "0x0012",
+        "0x0013",
+        "0x0017",
+        "0x001F",
+        "0x0020"
+      ],
+      "targets": [
+        "0x061A",
+        "0x05F3",
+        "0x060B",
+        "0x05FC",
+        "0x0615",
+        "0x0606",
+        "0x0610",
+        "0x0601",
+        "0x05F7"
+      ],
+      "window": [
+        "05D2: pushw\t%si",
+        "05D3: pushw\t%di",
+        "05D4: movw\t0xa(%bp), %ax",
+        "05D7: movw\t%ax, -0x2(%bp)",
+        "05DA: movw\t$0x9, %cx",
+        "05DD: movw\t$0x627, %bx             # imm = 0x627",
+        "05E0: movw\t%cs:(%bx), %ax",
+        "05E3: cmpw\t-0x2(%bp), %ax",
+        "05E6: je\t0x5ef <.text+0x5ef>",
+        "05E8: addw\t$0x2, %bx",
+        "05EB: loop\t0x5e0 <.text+0x5e0>",
+        "05ED: jmp\t0x61f <.text+0x61f>",
+        "05EF: jmpw\t*%cs:0x12(%bx)",
+        "05F3: xorw\t%ax, %ax",
+        "05F5: jmp\t0x622 <.text+0x622>",
+        "05F7: movw\t$0x1, %ax",
+        "05FA: jmp\t0x622 <.text+0x622>"
+      ]
+    },
+    {
+      "segment": 6,
+      "site": "0x298F",
+      "disp": "0x0014",
+      "detected_base": "0x2ACB",
+      "detected_count": 10,
+      "keys_hex": [
+        "0x0020",
+        "0x002B",
+        "0x0031",
+        "0x0032",
+        "0x0033",
+        "0x0034",
+        "0x004C",
+        "0x0057",
+        "0x006C",
+        "0x0077"
+      ],
+      "targets": [
+        "0x29C5",
+        "0x2A14",
+        "0x2993",
+        "0x299E",
+        "0x29A9",
+        "0x29B4",
+        "0x29F5",
+        "0x29D6",
+        "0x29F5",
+        "0x29D6"
+      ],
+      "window": [
+        "2971: pushw\t%si",
+        "2972: pushw\t%di",
+        "2973: movw\t0xa(%bp), %dx",
+        "2976: movw\t%dx, -0x2(%bp)",
+        "2979: movw\t$0xa, %cx",
+        "297C: movw\t$0x2acb, %bx            # imm = 0x2ACB",
+        "297F: movw\t%cs:(%bx), %ax",
+        "2982: cmpw\t-0x2(%bp), %ax",
+        "2985: je\t0x298f <.text+0x298f>",
+        "2987: addw\t$0x2, %bx",
+        "298A: loop\t0x297f <.text+0x297f>",
+        "298C: jmp\t0x2ab9 <.text+0x2ab9>",
+        "298F: jmpw\t*%cs:0x14(%bx)",
+        "2993: lesw\t0x6(%bp), %bx",
+        "2996: pushl\t%es:0x36e(%bx)",
+        "299C: jmp\t0x29bd <.text+0x29bd>",
+        "299E: lesw\t0x6(%bp), %bx"
+      ]
+    },
+    {
+      "segment": 6,
+      "site": "0x2CA1",
+      "disp": "0x0016",
+      "detected_base": "0x2CD1",
+      "detected_count": 11,
+      "keys_hex": [
+        "0x0020",
+        "0x002D",
+        "0x0031",
+        "0x0032",
+        "0x0033",
+        "0x0034",
+        "0x0045",
+        "0x0058",
+        "0x0065",
+        "0x0078",
+        "0x007C"
+      ],
+      "targets": [
+        "0x2CCA",
+        "0x2CC5",
+        "0x2CA7",
+        "0x2CAC",
+        "0x2CB1",
+        "0x2CB6",
+        "0x2CBB",
+        "0x2CC0",
+        "0x2CBB",
+        "0x2CC0",
+        "0x2CC5"
+      ],
+      "window": [
+        "2C84: pushw\t%di",
+        "2C85: movb\t0xa(%bp), %al",
+        "2C88: cwtl",
+        "2C89: movw\t%ax, -0x2(%bp)",
+        "2C8C: movw\t$0xb, %cx",
+        "2C8F: movw\t$0x2cd1, %bx            # imm = 0x2CD1",
+        "2C92: movw\t%cs:(%bx), %ax",
+        "2C95: cmpw\t-0x2(%bp), %ax",
+        "2C98: je\t0x2ca1 <.text+0x2ca1>",
+        "2C9A: addw\t$0x2, %bx",
+        "2C9D: loop\t0x2c92 <.text+0x2c92>",
+        "2C9F: jmp\t0x2cca <.text+0x2cca>",
+        "2CA1: jmpw\t*%cs:0x16(%bx)",
+        "2CA5: jmp\t0x2cca <.text+0x2cca>",
+        "2CA7: movw\t$0x1, %ax",
+        "2CAA: jmp\t0x2ccc <.text+0x2ccc>",
+        "2CAC: movw\t$0x3, %ax"
+      ]
+    },
+    {
+      "segment": 12,
+      "site": "0x0C2A",
+      "disp": "0x000A",
+      "detected_base": "0x0D47",
+      "detected_count": 5,
+      "keys_hex": [
+        "0x0031",
+        "0x0032",
+        "0x0033",
+        "0x0052",
+        "0x0072"
+      ],
+      "targets": [
+        "0x0C2E",
+        "0x0C69",
+        "0x0CA6",
+        "0x0CE3",
+        "0x0CE3"
+      ],
+      "window": [
+        "0C08: pushw\t%di",
+        "0C09: movw\t$0x0, -0x2(%bp)",
+        "0C0E: movw\t0xa(%bp), %ax",
+        "0C11: movw\t%ax, -0x4(%bp)",
+        "0C14: movw\t$0x5, %cx",
+        "0C17: movw\t$0xd47, %bx             # imm = 0xD47",
+        "0C1A: movw\t%cs:(%bx), %ax",
+        "0C1D: cmpw\t-0x4(%bp), %ax",
+        "0C20: je\t0xc2a <.text+0xc2a>",
+        "0C22: addw\t$0x2, %bx",
+        "0C25: loop\t0xc1a <.text+0xc1a>",
+        "0C27: jmp\t0xd27 <.text+0xd27>",
+        "0C2A: jmpw\t*%cs:0xa(%bx)",
+        "0C2E: pushl\t$0x5",
+        "0C31: pushw\t$0x0",
+        "0C33: lesw\t0x6(%bp), %bx",
+        "0C36: pushl\t%es:0x133(%bx)"
+      ]
+    },
+    {
+      "segment": 17,
+      "site": "0x1A7F",
+      "disp": "0x0012",
+      "detected_base": "0x1B68",
+      "detected_count": 9,
+      "keys_hex": [
+        "0x002D",
+        "0x002E",
+        "0x005F",
+        "0x0061",
+        "0x0065",
+        "0x0066",
+        "0x006F",
+        "0x0077",
+        "0x007C"
+      ],
+      "targets": [
+        "0x1AED",
+        "0x1B01",
+        "0x1AED",
+        "0x1AD5",
+        "0x1AC1",
+        "0x1AAD",
+        "0x1A99",
+        "0x1A85",
+        "0x1AE9"
+      ],
+      "window": [
+        "1A5F: movb\t%es:(%bx), %al",
+        "1A62: movb\t%al, -0x25(%bp)",
+        "1A65: cwtl",
+        "1A66: movw\t%ax, -0x20(%bp)",
+        "1A69: movw\t$0x9, %cx",
+        "1A6C: movw\t$0x1b68, %bx            # imm = 0x1B68",
+        "1A6F: movw\t%cs:(%bx), %ax",
+        "1A72: cmpw\t-0x20(%bp), %ax",
+        "1A75: je\t0x1a7f <.text+0x1a7f>",
+        "1A77: addw\t$0x2, %bx",
+        "1A7A: loop\t0x1a6f <.text+0x1a6f>",
+        "1A7C: jmp\t0x1b01 <.text+0x1b01>",
+        "1A7F: jmpw\t*%cs:0x12(%bx)",
+        "1A83: jmp\t0x1b01 <.text+0x1b01>",
+        "1A85: pushw\t-0x1e(%bp)",
+        "1A88: pushw\t-0x24(%bp)",
+        "1A8B: pushl\t0x6(%bp)"
+      ]
+    },
+    {
+      "segment": 21,
+      "site": "0x033F",
+      "disp": "0x0014",
+      "detected_base": "0x053C",
+      "detected_count": 10,
+      "keys_hex": [
+        "0x0045",
+        "0x0046",
+        "0x0048",
+        "0x004C",
+        "0x0057",
+        "0x0065",
+        "0x0066",
+        "0x0068",
+        "0x006C",
+        "0x0077"
+      ],
+      "targets": [
+        "0x0343",
+        "0x041B",
+        "0x03AF",
+        "0x04AD",
+        "0x042D",
+        "0x0343",
+        "0x041B",
+        "0x03AF",
+        "0x04AD",
+        "0x042D"
+      ],
+      "window": [
+        "0321: pushw\t%si",
+        "0322: pushw\t%di",
+        "0323: movw\t0xa(%bp), %dx",
+        "0326: movw\t%dx, -0x6(%bp)",
+        "0329: movw\t$0xa, %cx",
+        "032C: movw\t$0x53c, %bx             # imm = 0x53C",
+        "032F: movw\t%cs:(%bx), %ax",
+        "0332: cmpw\t-0x6(%bp), %ax",
+        "0335: je\t0x33f <.text+0x33f>",
+        "0337: addw\t$0x2, %bx",
+        "033A: loop\t0x32f <.text+0x32f>",
+        "033C: jmp\t0x52a <.text+0x52a>",
+        "033F: jmpw\t*%cs:0x14(%bx)",
+        "0343: cmpw\t$0x0, 0x8a",
+        "0348: je\t0x525 <.text+0x525>",
+        "034C: lesw\t0x6(%bp), %bx",
+        "034F: cmpl\t$0x0, %es:0xc8(%bx)"
+      ]
+    },
+    {
+      "segment": 23,
+      "site": "0x1134",
+      "disp": "0x0012",
+      "detected_base": "0x11AE",
+      "detected_count": 9,
+      "keys_hex": [
+        "0x0024",
+        "0x0025",
+        "0x0031",
+        "0x0032",
+        "0x0033",
+        "0x0034",
+        "0x0035",
+        "0x0036",
+        "0x0040"
+      ],
+      "targets": [
+        "0x1138",
+        "0x1155",
+        "0x115D",
+        "0x1165",
+        "0x116D",
+        "0x1175",
+        "0x117D",
+        "0x1185",
+        "0x114D"
+      ],
+      "window": [
+        "1117: pushw\t%si",
+        "1118: pushw\t%di",
+        "1119: movw\t0xa(%bp), %dx",
+        "111C: movw\t%dx, -0x2(%bp)",
+        "111F: movw\t$0x9, %cx",
+        "1122: movw\t$0x11ae, %bx            # imm = 0x11AE",
+        "1125: movw\t%cs:(%bx), %ax",
+        "1128: cmpw\t-0x2(%bp), %ax",
+        "112B: je\t0x1134 <.text+0x1134>",
+        "112D: addw\t$0x2, %bx",
+        "1130: loop\t0x1125 <.text+0x1125>",
+        "1132: jmp\t0x119c <.text+0x119c>",
+        "1134: jmpw\t*%cs:0x12(%bx)",
+        "1138: cmpw\t$0x0, 0x8a",
+        "113D: je\t0x1197 <.text+0x1197>",
+        "113F: pushl\t0x6(%bp)",
+        "1143: nop"
+      ]
+    },
+    {
+      "segment": 36,
+      "site": "0x0B6F",
+      "disp": "0x0010",
+      "detected_base": "0x0D88",
+      "detected_count": 8,
+      "keys_hex": [
+        "0x8000",
+        "0xC000",
+        "0xC001",
+        "0xC002",
+        "0xC003",
+        "0xC004",
+        "0xC005",
+        "0xC006"
+      ],
+      "targets": [
+        "0x0D2F",
+        "0x0B73",
+        "0x0BAE",
+        "0x0BF0",
+        "0x0C37",
+        "0x0C76",
+        "0x0CBF",
+        "0x0CF7"
+      ],
+      "window": [
+        "0B4D: addw\t$0x6, %sp",
+        "0B50: movw\t%ax, -0x8(%bp)",
+        "0B53: movw\t-0x6(%bp), %ax",
+        "0B56: movw\t%ax, -0x4(%bp)",
+        "0B59: movw\t$0x8, %cx",
+        "0B5C: movw\t$0xd88, %bx             # imm = 0xD88",
+        "0B5F: movw\t%cs:(%bx), %ax",
+        "0B62: cmpw\t-0x4(%bp), %ax",
+        "0B65: je\t0xb6f <.text+0xb6f>",
+        "0B67: addw\t$0x2, %bx",
+        "0B6A: loop\t0xb5f <.text+0xb5f>",
+        "0B6C: jmp\t0xd6d <.text+0xd6d>",
+        "0B6F: jmpw\t*%cs:0x10(%bx)",
+        "0B73: pushw\t0xe(%bp)",
+        "0B76: pushl\t0xa(%bp)",
+        "0B7A: pushw\t%cs",
+        "0B7B: callw\t0x4f7 <.text+0x4f7>"
+      ]
+    },
+    {
+      "segment": 38,
+      "site": "0x31EB",
+      "disp": "0x000E",
+      "detected_base": "0x3355",
+      "detected_count": 7,
+      "keys_hex": [
+        "0x0002",
+        "0x0010",
+        "0x0086",
+        "0x0102",
+        "0x0111",
+        "0x030F",
+        "0x0311"
+      ],
+      "targets": [
+        "0x3273",
+        "0x331E",
+        "0x327D",
+        "0x32FC",
+        "0x32D5",
+        "0x31FA",
+        "0x31EF"
+      ],
+      "window": [
+        "31C9: movw\t-0xa(%bp), %ax",
+        "31CC: jmp\t0x334a <.text+0x334a>",
+        "31CF: movw\t0xc(%bp), %ax",
+        "31D2: movw\t%ax, -0xc(%bp)",
+        "31D5: movw\t$0x7, %cx",
+        "31D8: movw\t$0x3355, %bx            # imm = 0x3355",
+        "31DB: movw\t%cs:(%bx), %ax",
+        "31DE: cmpw\t-0xc(%bp), %ax",
+        "31E1: je\t0x31eb <.text+0x31eb>",
+        "31E3: addw\t$0x2, %bx",
+        "31E6: loop\t0x31db <.text+0x31db>",
+        "31E8: jmp\t0x3338 <.text+0x3338>",
+        "31EB: jmpw\t*%cs:0xe(%bx)",
+        "31EF: movw\t0xa(%bp), %ax",
+        "31F2: cmpw\t0xe(%bp), %ax",
+        "31F5: jne\t0x31fa <.text+0x31fa>",
+        "31F7: jmp\t0x3338 <.text+0x3338>"
+      ]
+    },
+    {
+      "segment": 38,
+      "site": "0x342F",
+      "disp": "0x0012",
+      "detected_base": "0x3533",
+      "detected_count": 9,
+      "keys_hex": [
+        "0x0002",
+        "0x0003",
+        "0x000F",
+        "0x0020",
+        "0x0200",
+        "0x0201",
+        "0x0202",
+        "0x0204",
+        "0x0205"
+      ],
+      "targets": [
+        "0x350D",
+        "0x34B1",
+        "0x34B7",
+        "0x3501",
+        "0x3433",
+        "0x3433",
+        "0x3433",
+        "0x3433",
+        "0x3433"
+      ],
+      "window": [
+        "340D: movw\t-0xa(%bp), %ax",
+        "3410: jmp\t0x3528 <.text+0x3528>",
+        "3413: movw\t0xc(%bp), %ax",
+        "3416: movw\t%ax, -0xc(%bp)",
+        "3419: movw\t$0x9, %cx",
+        "341C: movw\t$0x3533, %bx            # imm = 0x3533",
+        "341F: movw\t%cs:(%bx), %ax",
+        "3422: cmpw\t-0xc(%bp), %ax",
+        "3425: je\t0x342f <.text+0x342f>",
+        "3427: addw\t$0x2, %bx",
+        "342A: loop\t0x341f <.text+0x341f>",
+        "342C: jmp\t0x3516 <.text+0x3516>",
+        "342F: jmpw\t*%cs:0x12(%bx)",
+        "3433: cmpl\t$0x0, -0x6(%bp)",
+        "3438: jne\t0x343c <.text+0x343c>",
+        "343A: jmp\t0x34b1 <.text+0x34b1>",
+        "343C: movw\t$0x0, -0xe(%bp)"
+      ]
+    }
+  ],
+  "unique_mnemonics_count": 200,
+  "mnemonics_top_40": [
+    [
+      "movw",
+      41179
+    ],
+    [
+      "pushw",
+      32903
+    ],
+    [
+      "addw",
+      15570
+    ],
+    [
+      "lesw",
+      12780
+    ],
+    [
+      "lcallw",
+      10010
+    ],
+    [
+      "pushl",
+      9445
+    ],
+    [
+      "popw",
+      8693
+    ],
+    [
+      "je",
+      5426
+    ],
+    [
+      "jmp",
+      4960
+    ],
+    [
+      "incw",
+      3910
+    ],
+    [
+      "cmpw",
+      3654
+    ],
+    [
+      "decw",
+      3344
+    ],
+    [
+      "addb",
+      3122
+    ],
+    [
+      "lretw",
+      3111
+    ],
+    [
+      "movl",
+      3097
+    ],
+    [
+      "orw",
+      2793
+    ],
+    [
+      "<unknown>",
+      2792
+    ],
+    [
+      "leaw",
+      2761
+    ],
+    [
+      "subw",
+      2463
+    ],
+    [
+      "jne",
+      2298
+    ],
+    [
+      "callw",
+      2102
+    ],
+    [
+      "cmpl",
+      2013
+    ],
+    [
+      "leave",
+      1533
+    ],
+    [
+      "xorw",
+      1233
+    ],
+    [
+      "nop",
+      1057
+    ],
+    [
+      "shlw",
+      712
+    ],
+    [
+      "movb",
+      679
+    ],
+    [
+      "imulw",
+      631
+    ],
+    [
+      "testb",
+      570
+    ],
+    [
+      "jl",
+      529
+    ],
+    [
+      "andb",
+      503
+    ],
+    [
+      "jge",
+      382
+    ],
+    [
+      "jle",
+      318
+    ],
+    [
+      "cltd",
+      306
+    ],
+    [
+      "jb",
+      271
+    ],
+    [
+      "jg",
+      237
+    ],
+    [
+      "adcw",
+      221
+    ],
+    [
+      "andw",
+      215
+    ],
+    [
+      "jae",
+      192
+    ],
+    [
+      "ljmpw",
+      188
+    ]
+  ],
+  "all_mnemonics": {
+    "movw": 41179,
+    "pushw": 32903,
+    "addw": 15570,
+    "lesw": 12780,
+    "lcallw": 10010,
+    "pushl": 9445,
+    "popw": 8693,
+    "je": 5426,
+    "jmp": 4960,
+    "incw": 3910,
+    "cmpw": 3654,
+    "decw": 3344,
+    "addb": 3122,
+    "lretw": 3111,
+    "movl": 3097,
+    "orw": 2793,
+    "<unknown>": 2792,
+    "leaw": 2761,
+    "subw": 2463,
+    "jne": 2298,
+    "callw": 2102,
+    "cmpl": 2013,
+    "leave": 1533,
+    "xorw": 1233,
+    "nop": 1057,
+    "shlw": 712,
+    "movb": 679,
+    "imulw": 631,
+    "testb": 570,
+    "jl": 529,
+    "andb": 503,
+    "jge": 382,
+    "jle": 318,
+    "cltd": 306,
+    "jb": 271,
+    "jg": 237,
+    "adcw": 221,
+    "andw": 215,
+    "jae": 192,
+    "ljmpw": 188,
+    "orb": 185,
+    "cmpb": 183,
+    "popaw": 179,
+    "outsb": 174,
+    "outsw": 173,
+    "movswl": 161,
+    "ja": 158,
+    "insb": 158,
+    "arpl": 135,
+    "cwtl": 131,
+    "negw": 115,
+    "jbe": 108,
+    "00": 107,
+    "xchgw": 101,
+    "wait": 100,
+    "jmpw": 100,
+    "sbbw": 100,
+    "addl": 97,
+    "sarw": 96,
+    "rep": 95,
+    "insw": 94,
+    "idivw": 91,
+    "jo": 79,
+    "cld": 78,
+    "shrw": 72,
+    "xorb": 72,
+    "subb": 72,
+    "addr32": 71,
+    "idivl": 64,
+    "imull": 64,
+    "movzwl": 63,
+    "retw": 61,
+    "shldl": 60,
+    "sbbb": 57,
+    "repne": 45,
+    "subl": 45,
+    "ldsw": 44,
+    "notw": 43,
+    "popl": 43,
+    "loop": 40,
+    "testw": 36,
+    "stosb": 33,
+    "jns": 32,
+    "bound": 30,
+    "shll": 26,
+    "adcb": 25,
+    "int": 17,
+    "fldt": 16,
+    "js": 15,
+    "andl": 15,
+    "divw": 14,
+    "daa": 14,
+    "shrl": 14,
+    "mulw": 13,
+    "incl": 13,
+    "jcxz": 11,
+    "lodsb": 10,
+    "incb": 10,
+    "fmulp": 10,
+    "aaa": 10,
+    "outsl": 10,
+    "orl": 10,
+    "flds": 9,
+    "xorl": 9,
+    "enter": 9,
+    "stosw": 8,
+    "fldz": 7,
+    "fstpt": 7,
+    "inb": 7,
+    "decl": 7,
+    "rclw": 6,
+    "fldl": 6,
+    "rcrw": 6,
+    "sarl": 6,
+    "popal": 6,
+    "fldcw": 5,
+    "fstpl": 5,
+    "xchgb": 5,
+    "loope": 5,
+    "popfw": 5,
+    "inw": 5,
+    "stc": 5,
+    "jno": 5,
+    "das": 5,
+    "fstps": 4,
+    "lodsw": 4,
+    "shlb": 4,
+    "aam": 4,
+    "movsb": 4,
+    "xlatb": 4,
+    "rolw": 4,
+    "jp": 4,
+    "divl": 4,
+    "negl": 4,
+    "divb": 3,
+    "fnstsw": 3,
+    "decb": 3,
+    "cmpsb": 3,
+    "pushfw": 3,
+    "scasw": 3,
+    "salc": 3,
+    "testl": 3,
+    "fchs": 2,
+    "fildll": 2,
+    "fdivrp": 2,
+    "fstp": 2,
+    "fcomp": 2,
+    "std": 2,
+    "shrb": 2,
+    "fmuls": 2,
+    "larw": 2,
+    "iretw": 2,
+    "aad": 2,
+    "outw": 2,
+    "jnp": 2,
+    "movzbl": 2,
+    "int3": 2,
+    "outb": 2,
+    "adcl": 2,
+    "movsbw": 2,
+    "movzbw": 2,
+    "notb": 2,
+    "fnstcw": 1,
+    "negb": 1,
+    "fxam": 1,
+    "fld": 1,
+    "mulb": 1,
+    "fidivs": 1,
+    "fimuls": 1,
+    "frndint": 1,
+    "rcrb": 1,
+    "fld1": 1,
+    "fmull": 1,
+    "fdivrs": 1,
+    "clc": 1,
+    "fildl": 1,
+    "lldtw": 1,
+    "cmc": 1,
+    "fsts": 1,
+    "fsubrl": 1,
+    "pushaw": 1,
+    "sahf": 1,
+    "into": 1,
+    "ficoml": 1,
+    "cvtpi2ps": 1,
+    "loopne": 1,
+    "aas": 1,
+    "fistpl": 1,
+    "cli": 1,
+    "cmpsw": 1,
+    "hlt": 1,
+    "fldenv": 1,
+    "sarb": 1,
+    "scasb": 1,
+    "lslw": 1,
+    "verr": 1,
+    "pushal": 1,
+    "pushfl": 1,
+    "popfl": 1,
+    "lock": 1
+  },
+  "std_sites": [
+    {
+      "segment": 1,
+      "offset": "0x1375",
+      "window": [
+        "1370: addw\t%bx, %di",
+        "1372: pushw\t%di",
+        "1373: xorb\t%al, %al",
+        "1375: std",
+        "1376: stosb\t%al, %es:(%di)",
+        "1377: leaw\t-0x10(%bp), %si",
+        "137A: movw\t$0x4, %cx",
+        "137D: nop ; NE 137D=!0",
+        "137E: wait"
+      ]
+    },
+    {
+      "segment": 1,
+      "offset": "0x181D",
+      "window": [
+        "1817: jb\t0x181d <.text+0x181d>",
+        "1819: cmpw\t%bx, %ax",
+        "181B: jae\t0x1823 <.text+0x1823>",
+        "181D: std",
+        "181E: movw\t$0x1, %ax",
+        "1821: jmp\t0x1826 <.text+0x1826>",
+        "1823: cld",
+        "1824: xorw\t%ax, %ax",
+        "1826: ldsw\t0x6(%bp), %si"
+      ]
+    }
+  ],
+  "winexec_sites": [
+    {
+      "segment": 22,
+      "site": "0x055C",
+      "window": [
+        "0534: pushw\t%ax",
+        "0535: pushw\t%ss",
+        "0536: leaw\t-0x128(%bp), %ax",
+        "053A: pushw\t%ax",
+        "053B: pushw\t$0x4000                 # imm = 0x4000",
+        "053E: lcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 053F=KERNEL!74",
+        "0543: orw\t%ax, %ax",
+        "0545: jge\t0x553 <.text+0x553>",
+        "0547: pushw\t$0x0",
+        "0549: pushw\t%cs",
+        "054A: pushw\t$0x3d3                  # imm = 0x3D3",
+        "054D: pushw\t%cs",
+        "054E: pushw\t$0x3f1                  # imm = 0x3F1",
+        "0551: jmp\t0x598 <.text+0x598>",
+        "0553: pushw\t%ss",
+        "0554: leaw\t-0xa0(%bp), %ax",
+        "0558: pushw\t%ax",
+        "0559: pushw\t$0x5",
+        "055B: lcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 055C=KERNEL!166",
+        "0560: cmpw\t$0x20, %ax",
+        "0563: jae\t0x571 <.text+0x571>",
+        "0565: pushw\t$0x0",
+        "0567: pushw\t%cs",
+        "0568: pushw\t$0x3f7                  # imm = 0x3F7",
+        "056B: pushw\t%cs",
+        "056C: pushw\t$0x416                  # imm = 0x416"
+      ]
+    }
+  ],
+  "bootstrap_tail_0075_0160": [
+    "0077: je\t0x7f <.text+0x7f>",
+    "0079: movw\t$0x1, 0x36",
+    "007F: andw\t$0xe, %ax",
+    "0082: shrw\t%ax",
+    "0084: testw\t$0x4, %ax",
+    "0087: jne\t0x8e <.text+0x8e>",
+    "0089: orw\t%ax, %ax",
+    "008B: je\t0x8e <.text+0x8e>",
+    "008D: incw\t%ax",
+    "008E: movw\t%ax, 0x34",
+    "0091: movw\t%ds, %ax",
+    "0093: movw\t%ax, %es",
+    "0095: movw\t$0x20b8, %si            # imm = 0x20B8",
+    "0098: movw\t$0x210c, %di            # imm = 0x210C",
+    "009B: callw\t0xf5 <.text+0xf5>",
+    "009E: pushw\t0x3a",
+    "00A2: pushw\t0x3c",
+    "00A6: pushw\t0x38",
+    "00AA: pushw\t0x3e",
+    "00AE: pushw\t0x40",
+    "00B2: lcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 00B3=2:1018",
+    "00B7: pushw\t%ax",
+    "00B8: cmpw\t$0x0, 0x49",
+    "00BD: jne\t0xc4 <.text+0xc4>",
+    "00BF: nop",
+    "00C0: pushw\t%cs",
+    "00C1: callw\t0x3fc7 <.text+0x3fc7>",
+    "00C4: nop",
+    "00C5: pushw\t%cs",
+    "00C6: callw\t0x3fdc <.text+0x3fdc>",
+    "00C9: movw\t%ds, %ax",
+    "00CB: movw\t%ax, %es",
+    "00CD: pushw\t%si",
+    "00CE: pushw\t%di",
+    "00CF: movw\t$0x210c, %si            # imm = 0x210C",
+    "00D2: movw\t$0x2118, %di            # imm = 0x2118",
+    "00D5: callw\t0x139 <.text+0x139>",
+    "00D8: popw\t%di",
+    "00D9: popw\t%si",
+    "00DA: lretw",
+    "00DB: lretw",
+    "00DC: lretw",
+    "00DD: movw\t%sp, %bp",
+    "00DF: movb\t0x4(%bp), %al",
+    "00E2: movb\t$0x4c, %ah",
+    "00E4: int\t$0x21",
+    "00E6: movb\t$-0x1, %al",
+    "00E8: pushw\t%ax",
+    "00E9: nop",
+    "00EA: pushw\t%cs",
+    "00EB: callw\t0x3fc7 <.text+0x3fc7>",
+    "00EE: movb\t$0x4c, %ah",
+    "00F0: int\t$0x21",
+    "00F2: movw\t%ss, %ax",
+    "00F4: lretw",
+    "00F5: movw\t$0x100, %ax             # imm = 0x100",
+    "00F8: movw\t%di, %dx",
+    "00FA: movw\t%si, %bx",
+    "00FC: cmpw\t%di, %bx",
+    "00FE: je\t0x119 <.text+0x119>",
+    "0100: cmpb\t$-0x1, %es:(%bx)",
+    "0104: je\t0x114 <.text+0x114>",
+    "0106: movb\t%es:0x1(%bx), %cl",
+    "010A: xorb\t%ch, %ch",
+    "010C: cmpw\t%ax, %cx",
+    "010E: jae\t0x114 <.text+0x114>",
+    "0110: movw\t%cx, %ax",
+    "0112: movw\t%bx, %dx",
+    "0114: addw\t$0x6, %bx",
+    "0117: jmp\t0xfc <.text+0xfc>",
+    "0119: cmpw\t%di, %dx",
+    "011B: je\t0x138 <.text+0x138>",
+    "011D: movw\t%dx, %bx",
+    "011F: cmpb\t$0x0, %es:(%bx)",
+    "0123: movb\t$-0x1, %es:(%bx)",
+    "0127: pushw\t%es",
+    "0128: je\t0x131 <.text+0x131>",
+    "012A: lcallw\t*%es:0x2(%bx)",
+    "012E: popw\t%es",
+    "012F: jmp\t0xf5 <.text+0xf5>",
+    "0131: callw\t*%es:0x2(%bx)",
+    "0135: popw\t%es",
+    "0136: jmp\t0xf5 <.text+0xf5>",
+    "0138: retw",
+    "0139: movb\t$0x0, %ah",
+    "013B: movw\t%di, %dx",
+    "013D: movw\t%si, %bx",
+    "013F: cmpw\t%di, %bx",
+    "0141: je\t0x15a <.text+0x15a>",
+    "0143: cmpb\t$-0x1, %es:(%bx)",
+    "0147: je\t0x155 <.text+0x155>",
+    "0149: cmpb\t%ah, %es:0x1(%bx)",
+    "014D: jb\t0x155 <.text+0x155>",
+    "014F: movb\t%es:0x1(%bx), %ah",
+    "0153: movw\t%bx, %dx",
+    "0155: addw\t$0x6, %bx",
+    "0158: jmp\t0x13f <.text+0x13f>",
+    "015A: cmpw\t%di, %dx",
+    "015C: je\t0x179 <.text+0x179>",
+    "015E: movw\t%dx, %bx",
+    "0160: cmpb\t$0x0, %es:(%bx)"
+  ],
+  "dgroup_code_relocs": [
+    {
+      "dgroup_offset": "0x007C",
+      "ptr_offset": "0x007E",
+      "type_byte": 0,
+      "priority_byte": 0,
+      "target": "2:0000"
+    },
+    {
+      "dgroup_offset": "0x0080",
+      "ptr_offset": "0x0082",
+      "type_byte": 0,
+      "priority_byte": 0,
+      "target": "2:0005"
+    },
+    {
+      "dgroup_offset": "0x0084",
+      "ptr_offset": "0x0086",
+      "type_byte": 0,
+      "priority_byte": 0,
+      "target": "2:000B"
+    },
+    {
+      "dgroup_offset": "0x036A",
+      "ptr_offset": "0x036C",
+      "type_byte": 15,
+      "priority_byte": 0,
+      "target": "5:0000"
+    },
+    {
+      "dgroup_offset": "0x110E",
+      "ptr_offset": "0x1110",
+      "type_byte": 0,
+      "priority_byte": 0,
+      "target": "29:2D51"
+    },
+    {
+      "dgroup_offset": "0x116C",
+      "ptr_offset": "0x116E",
+      "type_byte": 116,
+      "priority_byte": 0,
+      "target": "30:0DA8"
+    },
+    {
+      "dgroup_offset": "0x1174",
+      "ptr_offset": "0x1176",
+      "type_byte": 0,
+      "priority_byte": 0,
+      "target": "30:0E08"
+    },
+    {
+      "dgroup_offset": "0x117C",
+      "ptr_offset": "0x117E",
+      "type_byte": 0,
+      "priority_byte": 0,
+      "target": "30:0E53"
+    },
+    {
+      "dgroup_offset": "0x1184",
+      "ptr_offset": "0x1186",
+      "type_byte": 0,
+      "priority_byte": 0,
+      "target": "30:0E7E"
+    },
+    {
+      "dgroup_offset": "0x118C",
+      "ptr_offset": "0x118E",
+      "type_byte": 0,
+      "priority_byte": 0,
+      "target": "30:0EAC"
+    },
+    {
+      "dgroup_offset": "0x11B6",
+      "ptr_offset": "0x11B8",
+      "type_byte": 0,
+      "priority_byte": 0,
+      "target": "33:2FBA"
+    },
+    {
+      "dgroup_offset": "0x11BE",
+      "ptr_offset": "0x11C0",
+      "type_byte": 0,
+      "priority_byte": 0,
+      "target": "33:30BF"
+    },
+    {
+      "dgroup_offset": "0x11C6",
+      "ptr_offset": "0x11C8",
+      "type_byte": 0,
+      "priority_byte": 0,
+      "target": "33:310D"
+    },
+    {
+      "dgroup_offset": "0x11CE",
+      "ptr_offset": "0x11D0",
+      "type_byte": 0,
+      "priority_byte": 0,
+      "target": "33:3172"
+    },
+    {
+      "dgroup_offset": "0x11D6",
+      "ptr_offset": "0x11D8",
+      "type_byte": 0,
+      "priority_byte": 0,
+      "target": "33:31BE"
+    },
+    {
+      "dgroup_offset": "0x11DE",
+      "ptr_offset": "0x11E0",
+      "type_byte": 0,
+      "priority_byte": 0,
+      "target": "33:322A"
+    },
+    {
+      "dgroup_offset": "0x11E6",
+      "ptr_offset": "0x11E8",
+      "type_byte": 0,
+      "priority_byte": 0,
+      "target": "33:324B"
+    },
+    {
+      "dgroup_offset": "0x1244",
+      "ptr_offset": "0x1246",
+      "type_byte": 0,
+      "priority_byte": 0,
+      "target": "37:1778"
+    },
+    {
+      "dgroup_offset": "0x124C",
+      "ptr_offset": "0x124E",
+      "type_byte": 0,
+      "priority_byte": 0,
+      "target": "37:1F55"
+    },
+    {
+      "dgroup_offset": "0x1254",
+      "ptr_offset": "0x1256",
+      "type_byte": 0,
+      "priority_byte": 0,
+      "target": "37:1F62"
+    },
+    {
+      "dgroup_offset": "0x1268",
+      "ptr_offset": "0x126A",
+      "type_byte": 25,
+      "priority_byte": 0,
+      "target": "37:222E"
+    },
+    {
+      "dgroup_offset": "0x1270",
+      "ptr_offset": "0x1272",
+      "type_byte": 0,
+      "priority_byte": 0,
+      "target": "37:232D"
+    },
+    {
+      "dgroup_offset": "0x1278",
+      "ptr_offset": "0x127A",
+      "type_byte": 0,
+      "priority_byte": 0,
+      "target": "37:222E"
+    },
+    {
+      "dgroup_offset": "0x1324",
+      "ptr_offset": "0x1326",
+      "type_byte": 0,
+      "priority_byte": 0,
+      "target": "39:0696"
+    },
+    {
+      "dgroup_offset": "0x1544",
+      "ptr_offset": "0x1546",
+      "type_byte": 0,
+      "priority_byte": 0,
+      "target": "1:0624"
+    },
+    {
+      "dgroup_offset": "0x154C",
+      "ptr_offset": "0x154E",
+      "type_byte": 0,
+      "priority_byte": 0,
+      "target": "1:0A4A"
+    },
+    {
+      "dgroup_offset": "0x16AE",
+      "ptr_offset": "0x16B0",
+      "type_byte": 0,
+      "priority_byte": 0,
+      "target": "40:0000"
+    },
+    {
+      "dgroup_offset": "0x16B2",
+      "ptr_offset": "0x16B4",
+      "type_byte": 0,
+      "priority_byte": 0,
+      "target": "40:0143"
+    },
+    {
+      "dgroup_offset": "0x1F10",
+      "ptr_offset": "0x1F12",
+      "type_byte": 0,
+      "priority_byte": 0,
+      "target": "1:3F46"
+    },
+    {
+      "dgroup_offset": "0x1F14",
+      "ptr_offset": "0x1F16",
+      "type_byte": 0,
+      "priority_byte": 0,
+      "target": "1:3F46"
+    },
+    {
+      "dgroup_offset": "0x1F18",
+      "ptr_offset": "0x1F1A",
+      "type_byte": 0,
+      "priority_byte": 0,
+      "target": "1:3F46"
+    },
+    {
+      "dgroup_offset": "0x20B8",
+      "ptr_offset": "0x20BA",
+      "type_byte": 1,
+      "priority_byte": 32,
+      "target": "2:15CC"
+    },
+    {
+      "dgroup_offset": "0x20BE",
+      "ptr_offset": "0x20C0",
+      "type_byte": 1,
+      "priority_byte": 32,
+      "target": "14:3180"
+    },
+    {
+      "dgroup_offset": "0x20C4",
+      "ptr_offset": "0x20C6",
+      "type_byte": 1,
+      "priority_byte": 32,
+      "target": "15:1BAE"
+    },
+    {
+      "dgroup_offset": "0x20CA",
+      "ptr_offset": "0x20CC",
+      "type_byte": 1,
+      "priority_byte": 32,
+      "target": "19:24B8"
+    },
+    {
+      "dgroup_offset": "0x20D0",
+      "ptr_offset": "0x20D2",
+      "type_byte": 1,
+      "priority_byte": 32,
+      "target": "19:2662"
+    },
+    {
+      "dgroup_offset": "0x20D6",
+      "ptr_offset": "0x20D8",
+      "type_byte": 1,
+      "priority_byte": 32,
+      "target": "20:08B7"
+    },
+    {
+      "dgroup_offset": "0x20DC",
+      "ptr_offset": "0x20DE",
+      "type_byte": 1,
+      "priority_byte": 32,
+      "target": "26:2F6A"
+    },
+    {
+      "dgroup_offset": "0x20E2",
+      "ptr_offset": "0x20E4",
+      "type_byte": 1,
+      "priority_byte": 32,
+      "target": "29:18D3"
+    },
+    {
+      "dgroup_offset": "0x20E8",
+      "ptr_offset": "0x20EA",
+      "type_byte": 1,
+      "priority_byte": 32,
+      "target": "30:04B0"
+    },
+    {
+      "dgroup_offset": "0x20EE",
+      "ptr_offset": "0x20F0",
+      "type_byte": 1,
+      "priority_byte": 32,
+      "target": "37:13CA"
+    },
+    {
+      "dgroup_offset": "0x20F4",
+      "ptr_offset": "0x20F6",
+      "type_byte": 1,
+      "priority_byte": 32,
+      "target": "39:22EF"
+    },
+    {
+      "dgroup_offset": "0x2106",
+      "ptr_offset": "0x2108",
+      "type_byte": 1,
+      "priority_byte": 9,
+      "target": "1:40F0"
+    },
+    {
+      "dgroup_offset": "0x210C",
+      "ptr_offset": "0x210E",
+      "type_byte": 1,
+      "priority_byte": 32,
+      "target": "30:04BF"
+    }
+  ],
+  "loadcursor_sites": [
+    {
+      "segment": 2,
+      "site": "0x02AE",
+      "window": [
+        "028B: movw\t$0x23, -0x2e(%bp)",
+        "0290: movw\t$0x0, -0x2a(%bp) ; NE 0293=38:33BC",
+        "0295: movw\t$0xffff, -0x2c(%bp)     # imm = 0xFFFF ; NE 0298=38:33BC",
+        "029A: movw\t$0x4, -0x26(%bp)",
+        "029F: movw\t0x2118, %ax",
+        "02A2: movw\t%ax, -0x24(%bp)",
+        "02A5: pushw\t$0x0",
+        "02A7: pushl\t$0x7f00                 # imm = 0x7F00",
+        "02AD: lcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 02AE=USER!173",
+        "02B2: movw\t%ax, -0x20(%bp)",
+        "02B5: pushw\t$0x4"
+      ]
+    },
+    {
+      "segment": 2,
+      "site": "0x024F",
+      "window": [
+        "0234: movw\t0x2118, %ax",
+        "0237: movw\t%ax, -0x24(%bp)",
+        "023A: pushw\t%ax",
+        "023B: pushl\t$0x1",
+        "023E: lcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 023F=USER!174",
+        "0243: movw\t%ax, -0x22(%bp)",
+        "0246: pushw\t$0x0",
+        "0248: pushl\t$0x7f00                 # imm = 0x7F00",
+        "024E: lcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 024F=USER!173",
+        "0253: movw\t%ax, -0x20(%bp)",
+        "0256: pushw\t$0x4"
+      ]
+    },
+    {
+      "segment": 32,
+      "site": "0x0807",
+      "window": [
+        "07EE: movw\t%ax, %es",
+        "07F0: pushw\t%es:0x2118",
+        "07F5: movw\t-0x2(%bp), %ax",
+        "07F8: addw\t$0x3e4, %ax             # imm = 0x3E4",
+        "07FB: movzwl\t%ax, %eax",
+        "07FF: shldl\t$0x10, %eax, %edx",
+        "0804: pushw\t%dx",
+        "0805: pushw\t%ax",
+        "0806: lcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 0807=USER!173",
+        "080B: movw\t-0x4(%bp), %bx",
+        "080E: movw\t%ax, (%bx)"
+      ]
+    },
+    {
+      "segment": 32,
+      "site": "0x07DA",
+      "window": [
+        "07B8: movw\t%ax, 0x21a2",
+        "07BB: movw\t$0x0, 0x21a4",
+        "07C1: pushw\t$0x0",
+        "07C3: pushl\t$0x7f02                 # imm = 0x7F02",
+        "07C9: lcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 07CA=USER!173",
+        "07CE: movw\t%ax, 0x21a8",
+        "07D1: pushw\t$0x0",
+        "07D3: pushl\t$0x7f01                 # imm = 0x7F01",
+        "07D9: lcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 07DA=USER!173",
+        "07DE: movw\t%ax, 0x21a6",
+        "07E1: movw\t$0x4, -0x2(%bp)"
+      ]
+    },
+    {
+      "segment": 32,
+      "site": "0x07CA",
+      "window": [
+        "07A5: movw\t$0x0, 0x219c",
+        "07AB: pushw\t$0x0",
+        "07AD: pushl\t$0x7f00                 # imm = 0x7F00",
+        "07B3: lcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 07B4=USER!173",
+        "07B8: movw\t%ax, 0x21a2",
+        "07BB: movw\t$0x0, 0x21a4",
+        "07C1: pushw\t$0x0",
+        "07C3: pushl\t$0x7f02                 # imm = 0x7F02",
+        "07C9: lcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 07CA=USER!173",
+        "07CE: movw\t%ax, 0x21a8",
+        "07D1: pushw\t$0x0"
+      ]
+    },
+    {
+      "segment": 32,
+      "site": "0x07B4",
+      "window": [
+        "0791: pushw\t%si",
+        "0792: pushw\t%di",
+        "0793: movw\t$0x1, 0x21a0",
+        "0799: movw\t$0x0, 0x219e",
+        "079F: movw\t$0x0, 0x219a",
+        "07A5: movw\t$0x0, 0x219c",
+        "07AB: pushw\t$0x0",
+        "07AD: pushl\t$0x7f00                 # imm = 0x7F00",
+        "07B3: lcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 07B4=USER!173",
+        "07B8: movw\t%ax, 0x21a2",
+        "07BB: movw\t$0x0, 0x21a4"
+      ]
+    },
+    {
+      "segment": 38,
+      "site": "0x3713",
+      "window": [
+        "36F5: movw\t$0x0, %ax ; NE 36F6=49:2118",
+        "36F8: movw\t%ax, %es",
+        "36FA: pushw\t%es:0x2118",
+        "36FF: pushl\t$0x1",
+        "3702: lcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 3703=USER!174",
+        "3707: movw\t%ax, -0x2c(%bp)",
+        "370A: pushw\t$0x0",
+        "370C: pushl\t$0x7f00                 # imm = 0x7F00",
+        "3712: lcallw\t$0x0, $0xffff           # imm = 0xFFFF ; NE 3713=USER!173",
+        "3717: movw\t%ax, -0x2a(%bp)",
+        "371A: pushw\t$0x4"
+      ]
+    }
+  ]
+}

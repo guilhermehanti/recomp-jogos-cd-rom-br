@@ -1,0 +1,23 @@
+{
+  "app_id": "corcunda",
+  "executable_name": "O Corcunda de Notre Dame.exe",
+  "output_folder": "O Corcunda de Notre Dame",
+  "display_name": "O Corcunda de Notre Dame - Livro Animado Interativo",
+  "engine": "mediastation",
+  "game_id": "notredame",
+  "target_name": "notredame-win-br",
+  "expected_language": "br",
+  "expected_platform": "windows",
+  "expected_extra": "Brazilian Portuguese",
+  "runtime_icon_file": "HB_ASB.EXE",
+  "icon": "tools/standalone/icons/corcunda.ico",
+  "extra_configure_flags": [
+    "--disable-bink",
+    "--disable-vorbis",
+    "--disable-flac",
+    "--disable-mad",
+    "--disable-fluidsynth",
+    "--disable-mt32emu",
+    "--disable-nuked-opl"
+  ]
+}

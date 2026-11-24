@@ -1,0 +1,19 @@
+{
+  "verified_files": [
+    {
+      "path": "BIGJOBNG.EXE",
+      "size": 667568,
+      "sha256": "e483ac5986faea03f683168b6b05eae1e7ca9a5eed8449b0e880849362d65a1a"
+    },
+    {
+      "path": "BIGJOB.MMS",
+      "size": 786711,
+      "sha256": "f969e2509c80893a0e46b2a625491f8b311911e37ee29bafa2ffcd137ffff427"
+    }
+  ],
+  "records_compared_to_iso": 56006,
+  "movie_header_entries_verified": 58,
+  "movie_selection_partition_verified": true,
+  "cabin_callback_4_verified": true,
+  "original_code_executed": false
+}
